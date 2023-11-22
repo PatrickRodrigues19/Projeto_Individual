@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMZ</title>
+    <link rel="stylesheet" href="./CSS/AniRap.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">Noticias Geek</h1>
+            <ul class="navbar">
+                <li class="Geek_bar">
+                    <a href="#">Inicial</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="index.html">Canais</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+
+        <div class="All">
+
+            <div class="Capa">
+
+                <a href="https://www.youtube.com/vmzoficial">
+                    <img class="foto" src="./Assents/Imgs/VMZ.jpg"></a>
+
+                <div class="Descricao">
+                    <span>O canal VMZ é conhecido por produzir conteúdo relacionado a música, especialmente rap e
+                        hip-hop. O
+                        canal
+                        ganhou popularidade por suas musicas especiais de inscritos que atigiram milhares de
+                        visualizações,
+                        muitas vezes
+                        com letras relacionadas a jogos, animes, séries e cultura geek em geral.</span>
+                </div>
+
+            </div>
+            <div class="Top">
+
+                <div class="Descricao">
+
+                    <span id="Texto"></span>
+
+                </div>
+                <main>
+
+                    <script>
+
+                        var Titulos = [
+                            '<h2>10º Lugar - Gênio | Itoshi Sae (Blue Lock) | Kaito</h2>',
+                            '<br><br><h2>9º Lugar - Bill Cipher (Gravity Falls) | Estranhagedon | Kaito</h2>',
+                            '<br><br><h2>8º Lugar - Baki vs Yujiro (Baki The Grappler) | Assuntos de Família | Kaito</h2>',
+                            '<br><br><h2>7º Lugar - Harry Potter (Harry Potter) | Escolhido | Kaito</h2>',
+                            '<br><br><h2>6º Lugar - Hakari & Yuta (Jujutsu Kaisen) | Potencial Infinito</h2>',
+                            '<br><br><h2>5º Lugar - Gojo vs Sukuna (Jujutsu Kaisen) | Expansão de Domínio </h2>',
+                            '<br><br><h2>4º Lugar - Griffith (Berserk) | Falcão Branco | Kaito</h2>',
+                            '<br><br><h2>3º Lugar - Springtrap (FNAF) | Eu Sempre Volto | Kaito</h2>',
+                            '<br><br><h2>2º Lugar - Kaidou (One Piece) | Dragão | Kaito</h2>',
+                            '<br><br><h2>1º Lugar - Maki (Jujutsu Kaisen) | Zero | Kaito</h2>']
+
+                        var Videos = [
+                               ]
+
+                        var Descricao = [
+                                 ]
+
+                        for (var Contagem = 0; Contagem < Videos.length; Contagem += 1) {
+                            Texto.innerHTML += `${Titulos[Contagem]}<div class="videoDescricao"><span>${Videos[Contagem]}</span><span>${Descricao[Contagem]}</span>`
+                        }
+                    </script>

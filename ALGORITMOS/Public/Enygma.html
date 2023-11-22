@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enygma</title>
+    <link rel="stylesheet" href="./CSS/AniRap.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">Noticias Geek</h1>
+            <ul class="navbar">
+                <li class="Geek_bar">
+                    <a href="#">Inicial</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="index.html">Canais</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+
+        <div class="All">
+
+            <div class="Capa">
+
+                <a href="https://www.youtube.com/@Enygma.">
+                    <img class="foto" src="./Assents/Imgs/Enygma.jpg"></a>
+
+                <div class="Descricao">
+                    <span>O canal Enygma é conhecido por produzir grandes sucessos sobre conteúdo relacionado a música,
+                        especialmente rap e
+                        hip-hop. O canal ganhou popularidade por suas musicas especiais de inscritos que atigiram
+                        milhares de
+                        visualizações, muitas vezes com letras relacionadas a jogos, animes, séries e cultura geek em
+                        geral.</span>
+                </div>
+
+            </div>
+            <div class="Top">
+
+                <div class="Descricao">
+
+                    <span id="Texto"></span>
+
+                </div>
+                <main>
+
+                    <script>
+
+                        var Titulos = [
+                            '<h2>10º Lugar - O Melhor Espadachim | Zoro (One Piece) | Enygma 63</h2>',
+                            '<br><br><h2>9º Lugar - Shinigami... Ou Hollow | Ichigo Kurosaki (Bleach) | Enygma 93</h2>',
+                            '<br><br><h2>8º Lugar - Rap do Itadori Yuji (Jujutsu Kaisen) | Punhos Divergentes | Enygma</h2>',
+                            '<br><br><h2>7º Lugar - Rap do Thorfinn (Vinland Saga) | Conto de Vingança | Enygma 75</h2>',
+                            '<br><br><h2>6º Lugar - Rap do Chopper (One Piece) | Flores de Cerejeira | Enygma 73</h2>',
+                            '<br><br><h2>5º Lugar - Terror em Londres | Jack, o Estripador (Shuumatsu no Valkyrie)</h2>',
+                            '<br><br><h2>4º Lugar - Goku VS. Sonic [Guerra dos Deuses]</h2>',
+                            '<br><br><h2>3º Lugar - Rap do Satoru Gojo (Jujutsu Kaisen) | Mundo Infinito | Enygma 88</h2>',
+                            '<br><br><h2>2º Lugar - Pai da Humanidade | Adão (Shuumatsu no Valkyrie) | Enygma 95</h2>',
+                            '<br><br><h2>1º Lugar - Rei dos Piratas | Luffy (One Piece) | Enygma 98</h2>']
+
+                        var Videos = [
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/aOPcCIuuMhg?si=CltgPxiyVx4-chg7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/vjMMQ46ljF8?si=iYdjuYaiPyh4lvw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/i8PlG3ayTxg?si=MyXeYZPF-nruZLGu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/9oznaOysUs0?si=QH0s4a63GnYmwmBy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/vHV-IQV4IlE?si=NkS2LinJicJ3_AgH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/cPOjZwsus2Y?si=_fQGJ0HKSNi-ndJj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/Tdda1Q9P6tQ?si=a2cGQHt9UDHbt3UJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/3A0D7zANAto?si=tZjClFA_-Ui3rV5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/0OI3jBamxw4?si=Gpj-mu0vMEKZIbxf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/22WKy_bbYg0?si=J5ov44WNYX0JDjHx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+                        ]
+
+                        var Descricao = [
+                            'Seu nome completo é Roronoa Zoro, e ele é o espadachim principal e primeiro membro a se juntar à tripulação de Monkey D. Luffy, o protagonista da série. Zoro é conhecido por sua habilidade excepcional com a espada, sendo um espadachim habilidoso que utiliza o estilo de três espadas (Santoryu). A ambição de Zoro é se tornar o maior espadachim do mundo, e ele segue um código de honra rigoroso. Ele é leal aos seus amigos e está disposto a arriscar sua vida para protegê-los.',
+                            'Sua vida muda drasticamente quando ele acidentalmente obtém os poderes de um Ceifeiro de Almas (Shinigami) de uma Shinigami chamada Rukia Kuchiki. Ao longo da história, Ichigo passa por várias transformações, adquirindo poderes diferentes, como a forma de Hollow, Fullbring, e finalmente, alcançando uma forma avançada chamada Bankai como um Shinigami. Sua motivação principal é proteger seus entes queridos, seus amigos e o mundo espiritual contra ameaças cada vez mais poderosas.',
+                            'Tudo começa quando Yuji acidentalmente entra em contato com um objeto amaldiçoado e, por consequência, seu mundo é virado de cabeça para baixo. Ao descobrir que seu amigo havia aberto um antigo talismã amaldiçoado, Yuji se encontra no meio de um conflito entre feiticeiros e maldições. Após a morte de seu amigo, ele decide se juntar à escola de feiticeiros para aprender a lidar com essas ameaças e encontrar os restos mortais de seu amigo antes que eles sejam usados para causar ainda mais problemas.',
+                            'No início da história, Thorfinn é retratado como um talentoso e feroz guerreiro movido pelo desejo de vingança contra Askeladd, o assassino de seu pai. Ele se junta ao grupo liderado por Askeladd, esperando uma oportunidade para enfrentá-lo em combate. Ao longo da narrativa, Thorfinn participa de várias batalhas e conflitos violentos, enfrentando desafios tanto físicos quanto emocionais. Conforme a história avança, Thorfinn passa por uma profunda transformação.',
+                            'Antes de se juntar aos Chapéus de Palha, Chopper vivia na ilha Drum, onde foi rejeitado por sua aparência e tratado como um monstro. No entanto, após a chegada de Monkey D. Luffy e sua tripulação, Chopper se torna amigo deles, especialmente de Luffy. Chopper decide se tornar médico para ajudar as pessoas e é inspirado pelo sonho do Dr. Hiluluk de criar uma "cura milagrosa". Chopper é conhecido por sua personalidade adorável, ingênua e por sua habilidade médica excepcional.',
+                            'Jack, o Estripador é um famoso assassino em série da Inglaterra no século XIX, onde sua fama está em seu anonimato, com ninguém sabendo quem ele é até os dias atuais. Jack era o filho de uma prostituta que assassinou sua mãe por conta de ter sido enganado com um falso sentimento de amor, mas desde seu primeiro assassinato, Jack se sentiu em êxtase ao ver a "cor" da alma de sua mãe que denotava desespero, isso o motivou a se tornar u assassino, entrando em combate contra Hércules e o vencendo.',
+                            'Um quadro criado pelo Enygma para fazer duelos entre personagens desta vez com Goku e Sonic sobre um confronto esse obra intitulada "Guerra dos Deuses", eles são personagens de universos diferentes, com Goku sendo o icônico protagonista de "Dragon Ball" e Sonic sendo o famoso personagem dos jogos da SEGA. Confrontos entre personagens de universos distintos muitas vezes são temas de especulações e discussões entre fãs.',
+                            'Gojo é um professor na Escola Técnica de Jujutsu Tokyo e também um usuário extremamente habilidoso de jujutsu. Ele é conhecido por sua personalidade descontraída e despreocupada, muitas vezes agindo de maneira brincalhona e sarcástica. No entanto, por trás dessa aparência, ele é um dos feiticeiros mais formidáveis do universo de "Jujutsu Kaisen". Satoru Gojo desempenha um papel crucial no treinamento de seus alunos, enquanto eles enfrentam ameaças sobrenaturais conhecidas como maldições.',
+                            'Adão é escolhido como um dos representantes da humanidade na batalha contra os deuses, em um evento conhecido como a "Ragnarok". Ele enfrenta Zeus, em uma luta para decidir o destino da humanidade. Adão é apresentado como um ser humano excepcional, sendo o progenitor da raça humana de acordo com a mitologia abraâmica. Seu papel na história é significativo, pois ele personifica a força e a essência da humanidade diante de divindades poderosas.',
+                            'Luffy é um jovem audacioso e destemido que parte em uma jornada épica para encontrar o tesouro mais cobiçado do mundo, conhecido como One Piece, localizado na ilha lendária chamada Raftel. A conquista desse tesouro é a condição necessária para alguém ser reconhecido como o Rei dos Piratas. A motivação de Luffy para se tornar o Rei dos Piratas vai além da riqueza material. Ele busca a liberdade absoluta para si mesmo e para seus companheiros de tripulação, os Chapéus de Palha.'
+                        ]
+
+                        for (var Contagem = 0; Contagem < Videos.length; Contagem += 1) {
+                            Texto.innerHTML += `${Titulos[Contagem]}<div class="videoDescricao"><span>${Videos[Contagem]}</span><span>${Descricao[Contagem]}</span>`
+                        }
+                    </script>

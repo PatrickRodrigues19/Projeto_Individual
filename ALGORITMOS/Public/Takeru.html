@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takeru</title>
+    <link rel="stylesheet" href="./CSS/AniRap.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">Noticias Geek</h1>
+            <ul class="navbar">
+                <li class="Geek_bar">
+                    <a href="#">Inicial</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="index.html">Canais</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+
+        <div class="All">
+
+            <div class="Capa">
+
+                <a href="https://www.youtube.com/@xTakeru">
+                    <img class="foto" src="./Assents/Imgs/Takeru.jpg"></a>
+
+                <div class="Descricao">
+                    <span>O canal Takeru é conhecido por produzir conteúdo relacionado a música, especialmente rap e
+                        hip-hop. O
+                        canal
+                        ganhou popularidade por suas musicas especiais de inscritos que atigiram milhares de
+                        visualizações,
+                        muitas vezes
+                        com letras relacionadas a jogos, animes, séries e cultura geek em geral.</span>
+                </div>
+
+            </div>
+            <div class="Top">
+
+                <div class="Descricao">
+
+                    <span id="Texto"></span>
+
+                </div>
+                <main>
+
+                    <script>
+
+                        var Titulos = [
+                            '<h2>10º Lugar - SOU APENAS UM VILÃO POR DIVERSÃO - Saitama Rap </h2>',
+                            '<br><br><h2>9º Lugar - O VERDADEIRO RAP DO AYANOKOJI (+18) | Takeru</h2>',
+                            '<br><br><h2>8º Lugar - O MAIS BRABO DE KONOHA - Naruto Trap</h2>',
+                            '<br><br><h2>7º Lugar - Rap do Dabi (Boku no Hero) - CHAMAS AZUIS </h2>',
+                            '<br><br><h2>6º Lugar - TENHAM MEDO, PORQUE EU ESTOU AQUI - Midoriya Rap </h2>',
+                            '<br><br><h2>5º Lugar - RAGNAROK - Shuumatsu no Valkyrie </h2>',
+                            '<br><br><h2>4º Lugar - BIJUU DAMA - Naruto Rap </h2>',
+                            '<br><br><h2>3º Lugar - Rap do Naofumi (Tate no Yuusha) - O HERÓI DO ESCUDO</h2>',
+                            '<br><br><h2>2º Lugar - MURYO KUSHO - Gojo (Jujutsu Kaisen) | Takeru</h2>',
+                            '<br><br><h2>1º Lugar - Rap do Sukuna (Jujutsu Kaisen) - O REI DAS MALDIÇÕES</h2>']
+
+                        var Videos = [
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/8WDGSOwPmt0?si=7nKOk1FkMgUD2Qga" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/S6Z6i36-NY0?si=zYu44ohU97HpJykH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/FuczDiuGBOg?si=EAVqKHbifihYjds7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/IYk_XYm8Ve0?si=kcavM3uqUa0V0VEI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/qMC3PqBKqoY?si=cZ4T2jwDAVt8EzOr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/MFEyH5YmCNs?si=xOye_6dMGIV1d19_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/eVdH6-xOXPA?si=msSDE1lUOrizabQ2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/D9ssnn5rsWw?si=ZmKILtTYj6gUyThV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/4fWqK2qNYlQ?si=SsC1Dw_yoG3uCuM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/YreOOdtINhI?si=oBhh2_5_t-UzyJtH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+                            ]
+
+                        var Descricao = [
+                            'Saitama é conhecido por sua força incomparável e a habilidade de derrotar qualquer adversário com apenas um soco, o que é a base do título "Soco Sério". A música pode abordar a personalidade descontraída e desinteressada de Saitama, bem como sua busca por um desafio real, já que sua força esmagadora torna as lutas monótonas para ele.',
+                            'Ao longo da história, Ayanokoji revela ter objetivos e motivos ocultos, criando um mistério em torno de sua verdadeira natureza. Sua presença discreta e sua relutância em revelar seus verdadeiros sentimentos contribuem para a complexidade de seu personagem. Ayanokoji desenvolve relações complexas com outros estudantes, como Suzune Horikita e Kikyou Kushida. Sua participação em desafios e competições escolares, que são uma parte central da trama, destaca suas habilidades estratégicas.',
+                            'Inicialmente, Naruto é marginalizado devido à sua condição de ser o hospedeiro da Besta com Cauda, Kurama, mas sua determinação em superar esse estigma e ganhar respeito torna-se o cerne da narrativa. Ao longo da história, Naruto é parte do Time 7, liderado por Kakashi Hatake e composto por Sasuke Uchiha e Sakura Haruno. A dinâmica entre esses personagens e as experiências que compartilham formam a base para o crescimento e desenvolvimento de cada um.',
+                            'Sua identidade é inicialmente envolta em mistério, e sua presença é marcada por uma atitude cínica em relação à sociedade de heróis. Com cabelos azuis e queimaduras em seu rosto, Dabi possui um visual distintivo e utiliza o nome de vilão. Ele é notável por seu quirk, "Crematório", que lhe permite gerar chamas intensas. Essa habilidade é usada tanto para ataques ofensivos quanto como um meio de defesa, conferindo-lhe resistência ao calor extremo.',
+                            ' Nascido em um mundo onde a maioria das pessoas possui "quirks" (superpoderes), Midoriya é inicialmente uma exceção, sem nenhum quirk. Seu encontro decisivo com All Might, o maior herói, muda sua vida. All Might escolhe Midoriya como seu sucessor para herdar o poderoso quirk "One For All." Ingressando na U.A. High School, uma prestigiosa academia de heróis, Midoriya enfrenta desafios acadêmicos e físicos. Ele é colocado na Classe 1-A, onde forma amizades importantes.',
+                            ' A história se desenrola com os deuses nórdicos decidindo destruir a humanidade devido à sua corrupção, mas uma valquíria chamada Brunhilde propõe uma última oportunidade para os humanos provarem seu valor. Essa oportunidade se materializa na forma de uma competição chamada "Ragnarok", realizada a cada mil anos. Treze guerreiros humanos notáveis, escolhidos por Brunhilde, enfrentam treze poderosos deuses em combates individuais. O resultado dessas batalhas determina o destino da humanidade.',
+                            'Inicialmente, Naruto é marginalizado devido à sua condição de ser o hospedeiro da Besta com Cauda, Kurama, mas sua determinação em superar esse estigma e ganhar respeito torna-se o cerne da narrativa. Ao longo da história, Naruto é parte do Time 7, liderado por Kakashi Hatake e composto por Sasuke Uchiha e Sakura Haruno. A dinâmica entre esses personagens e as experiências que compartilham formam a base para o crescimento e desenvolvimento de cada um.',
+                            'A jornada de Naofumi começa com uma injustiça significativa, quando é falsamente acusado de um crime que não cometeu. Essa falsa acusação o isola da sociedade e o coloca em uma posição desvantajosa em comparação com os outros heróis. Sua perspectiva inicial do mundo é amargurada por essa experiência. Ao longo da história, Naofumi enfrenta dificuldades e adversidades que o forçam a se tornar mais independente e astuto. Sua determinação em se tornar mais forte e superar as circunstâncias desafiadoras é um tema central de sua jornada.',
+                            'Gojo é um professor na Escola Técnica de Jujutsu Tokyo e também um usuário extremamente habilidoso de jujutsu. Ele é conhecido por sua personalidade descontraída e despreocupada, muitas vezes agindo de maneira brincalhona e sarcástica. No entanto, por trás dessa aparência, ele é um dos feiticeiros mais formidáveis do universo de "Jujutsu Kaisen". Satoru Gojo desempenha um papel crucial no treinamento de seus alunos, enquanto eles enfrentam ameaças sobrenaturais conhecidas como maldições.',
+                            'Ryomen Sukuna é uma figura lendária dentro do mundo de "Jujutsu Kaisen", um Cursed Spirit de imenso poder e malícia. A história o retrata como um ser tão formidável que os feiticeiros mais habilidosos tiveram dificuldades em selá-lo completamente. Seu espírito foi fragmentado em vinte dedos amaldiçoados, e a busca por esses dedos é um elemento central na trama. O poder de Sukuna é uma fonte de temor, pois ele é conhecido por sua força avassaladora e habilidades destrutivas.'
+                            ]
+
+                        for (var Contagem = 0; Contagem < Videos.length; Contagem += 1) {
+                            Texto.innerHTML += `${Titulos[Contagem]}<div class="videoDescricao"><span>${Videos[Contagem]}</span><span>${Descricao[Contagem]}</span>`
+                        }
+                    </script>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- <link rel="website icon" type="png" href="../imagens/arcoffee.png"> -->
+    <link rel="stylesheet" href="./CSS/Login.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">Noticias Geek</h1>
+            <ul class="navbar">
+                <li class="Geek_bar">
+                    <a href="#">Inicial</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="index.html">Canais</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    </div>
+    <div class="imagem">
+
+        <div class="mensagem">
+
+        </div>
+
+    </div>
+    <div class="login">
+
+        
+        <div class="background-container">
+            <h1>LOGIN</h1>
+            <!-- Email: -->
+            EMAIL<br>
+            <input placeholder="usuario@exemplo.com" type="email" id="input_login"><br><br>
+
+            <!-- Senha: -->
+            SENHA<br>
+            <input placeholder="*********" type="password" id="input_senha"><br><br>
+
+
+            <button onclick="entrar()">Entrar</button></a><br><br>
+
+            <li><a href="../Cadastro/cadastro.html">Cadastre-se</a></li><br>
+            <li><a href="">Esqueceu a Senha</a></li>
+        </div>
+
+    </div>
+</body>
+
+<script>
+
+
+    function entrar() {
+
+        var emailVar = input_login.value;
+        var senhaVar = input_senha.value;
+
+        
+        console.log("FORM LOGIN: ", emailVar);
+        console.log("FORM SENHA: ", senhaVar);
+
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+                    sessionStorage.EMAIL_USUARIO = json.email;
+                    sessionStorage.NOME_USUARIO = json.nome;
+                    sessionStorage.ID_USUARIO = json.id;
+                    
+
+                    setTimeout(function () {
+                        window.location = "index.html";
+                    }, 1000); // apenas para exibir o loading
+
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+
+        return false;
+    }
+
+
+</script>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daarui</title>
+    <link rel="stylesheet" href="./CSS/Daarui.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">Noticias Geek</h1>
+            <ul class="navbar">
+                <li class="Geek_bar">
+                    <a href="#">Inicial</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="index.html">Canais</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+
+        <div class="All">
+
+            <div class="Capa">
+
+                <a href="https://www.youtube.com/@DaaruiOficial">
+                    <img class="foto" src="./Assents/Imgs/Daarui.jpg"></a>
+
+                <div class="Descricao">
+                    <span>O canal Daarui é conhecido por produzir conteúdo relacionado a música, especialmente rap e
+                        hip-hop. O canal
+                        ganhou popularidade por suas musicas especiais de inscritos que atigiram milhares de
+                        visualizações, muitas vezes
+                        com letras relacionadas a jogos, animes, séries e cultura geek em geral.</span>
+                </div>
+
+            </div>
+
+            <div class="Top">
+
+                <div class="Descricao">
+
+                    <span id="Texto"></span>
+
+                </div>
+
+    </main>
+
+    <script>
+
+        var Titulos = [
+            '<h2>10º Lugar - Amaldiçoado (Yuji Itadori) | Daarui</h2>',
+            '<br><br><h2>9º Lugar - O Cirurgião | Trafalgar D. Law (One Piece) | Daarui</h2>',
+            '<br><br><h2>8º Lugar - Liberdade (Luffy) | Trajetória Pós-TimeSkip | Daarui</h2>',
+            '<br><br><h2>7º Lugar - Trio Supernova | Law, Kid e Luffy (One Piece)</h2>',
+            '<br><br><h2>6º Lugar - Demônio Da Motosserra | Denji (Chainsaw Man) | Daarui</h2>',
+            '<br><br><h2>5º Lugar - O Homem Que Vale 1 Bilhão | Katakuri (One Piece) | Daarui</h2>',
+            '<br><br><h2>4º Lugar - O Infinito (Satoru Gojo) | Daarui</h2>',
+            '<br><br><h2>3º Lugar - Honra, Promessas e Cicatrizes (Roronoa Zoro) | Daarui</h2>',
+            '<br><br><h2>2º Lugar - Terceiro Lua | Akaza (Demon Slayer) | Daarui</h2>',
+            '<br><br><h2>1º Lugar - Pior Geração (One Piece) | Daarui</h2>'
+        ]
+
+        var Videos = [
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/Zq0qcmQQjp0?si=EnGUR3Ej7RCOJHwS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/zJ5hS5Z8ppA?si=To7pDm2IGqEOzq4d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/60TdbhMAsik?si=texB-6kavHFLi5X0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/mfLDWsB0Ng0?si=C8AYDOOZL3Y3cICH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/t8XsDhk5wsw?si=m2zjh8YfPAFtXUkP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/qvaKKrLtNfI?si=3y14s9xLdnjsOT3x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/vSbvK8vHrCE?si=hM2yzLy9BbNB1IND" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/mGu5QvoiRNo?si=4R16xU7A9DVdKx3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/JvrFubXFjFo?si=auPaxvIG3i5tjOkW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/ojIWgqlFj3w?si=aitd-DCJ_0T9ugsU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+
+        ]
+
+        var Descricao = [
+            'Yuji Itadori ele é um estudante do ensino médio com habilidades atléticas excepcionais, mas prefere uma vida normal. No entanto, sua vida muda drasticamente quando ele entra em contato com um objeto amaldiçoado contendo poderes malignos. Ao tentar salvar seus amigos de criaturas amaldiçoadas, Yuji acaba ingerindo um objeto amaldiçoado poderoso, o que o leva a se envolver no mundo perigoso da feitiçaria e das maldições. Após esse incidente, Yuji se junta à Tokyo Metropolitan Jujutsu Technical High School, uma escola especializada em lidar com maldições.',
+            'Law é um pirata e um médico altamente habilidoso. A habilidade mais marcante de Law é fruto do poder da fruta do diabo que ele consumiu, a Ope Ope no Mi. Essa Akuma no Mi concede a Law o poder de criar uma "sala" onde ele pode realizar cirurgias em um espaço tridimensional, manipular objetos e até mesmo trocar partes do corpo entre as pessoas. Essa habilidade única o torna uma figura formidável em batalhas e estratégias.Law inicialmente aparece como um antagonista, mas ao longo da história, ele forma uma aliança com Luffy e outros piratas para derrubar o imperador Donquixote Doflamingo.',
+            'O Gear 5th simboliza liberdade. Sua ativação é anunciada pelo som dos Tambores da Libertação. Quando ativada, Luffy exibe uma força física e liberdade nunca antes vistas. Essa transformação também afeta a aparência de Luffy, com roupas e cabelos brancos, além de refletir em sua personalidade, que se torna mais travessa. Além de ser uma das transformações mais poderosas de Luffy, o Gear 5 também marca um clímax na batalha contra Kaido, um dos vilões principais, e marca o fim do arco País de Wano.',
+            'Monkey D. Luffy: O capitão dos Piratas do Chapéu de Palha, Luffy é o protagonista principal de "One Piece". Ele ganha notoriedade por desafiar governos e outros piratas, e por sua busca para se tornar o Rei dos Piratas. Trafalgar D. Water Law: Law é o capitão dos Piratas Heart e é conhecido por sua habilidade com a Fruta do Diabo Ope Ope no Mi, que lhe confere poderes relacionados à manipulação de objetos e pessoas. Ele é conhecido por sua inteligência e táticas estratégicas. Eustass Kid: Kid é o capitão dos Piratas Kid. Ele é conhecido por sua personalidade impulsiva, a "Magnet-Magnet Fruit", que lhe permite manipular objetos metálicos.',
+            'A história gira em torno de Denji, um jovem caçador de demônios endividado que se transforma em Chainsaw Man, uma entidade meio-humana, meio-demônio, equipada com uma motosserra no lugar de um braço. Denji trabalha para a Agência de Controle de Demônios, combatendo ameaças sobrenaturais em troca de pagar as dívidas de seu falecido pai.',
+            'Katakuri é conhecido por sua força excepcional e suas habilidades como usuário da Fruta do Diabo "Mochi Mochi no Mi", que lhe confere poderes relacionados à criação e manipulação de mochi (um tipo de massa de arroz pegajosa). Além disso, ele possui a capacidade de prever o futuro, uma habilidade extremamente rara conhecida como "Observação do Futuro".',
+            'Essa habilidade é uma forma avançada de jujutsu que permite a manipulação do espaço. A "Limitless Cursed Technique" permite que Gojo controle a manipulação do espaço ao seu redor. Ele pode distorcer, expandir e contrair o espaço de maneiras impressionantes. Isso se traduz em uma habilidade formidável em combate, já que ele pode manipular o espaço para evitar ataques, criar barreiras defensivas e até mesmo aumentar o poder de seus próprios ataques. Além disso, Gojo é capaz de utilizar uma técnica, chamada "Cursed Technique Lapse: Blue", que envolve a criação de uma barreira impenetrável em torno de um alvo específico.',
+            'Seu nome completo é Roronoa Zoro, e ele é o espadachim principal e primeiro membro a se juntar à tripulação de Monkey D. Luffy, o protagonista da série. Zoro é conhecido por sua habilidade excepcional com a espada, sendo um espadachim habilidoso que utiliza o estilo de três espadas (Santoryu). A ambição de Zoro é se tornar o maior espadachim do mundo, e ele segue um código de honra rigoroso. Ele é leal aos seus amigos e está disposto a arriscar sua vida para protegê-los, Zoro enfrenta desafios formidáveis, participando de batalhas intensas para proteger seus amigos e alcançar seus próprios objetivos.',
+            'Akaza é apresentado como um demônio formidável que possui habilidades de combate extraordinárias. Ele tem uma personalidade feroz e, inicialmente, é encarregado de eliminar os Caçadores de Demônios, incluindo os protagonistas Tanjiro Kamado, Zenitsu Agatsuma e Inosuke Hashibira. Durante sua participação na história, Akaza se destaca por sua incrível força física e habilidades de regeneração. Ele é um oponente difícil de ser derrotado e representa uma ameaça significativa para os Caçadores de Demônios. Ao longo da história, ele enfrenta Tanjiro em um confronto intenso.',
+            'A "Pior Geração" em "One Piece" se refere a um grupo de jovens piratas que começaram a ganhar destaque no mundo após a execução de Gol D. Roger, o Rei dos Piratas. Essa geração é caracterizada por sua notável força e ambição, e seus membros são os principais jogadores na era atual da Grande Rota. O termo "Pior Geração" foi dado a eles pelo Almirante da Marinha Sakazuki (Akainu), sugerindo que, embora sejam notáveis, podem ser uma ameaça ao equilíbrio do mundo. Esses piratas têm objetivos ambiciosos, como encontrar o One Piece, tornar-se o Rei dos Piratas, ou desafiar o Governo Mundial de várias maneiras.'
+        ]
+
+        for (var Contagem = 0; Contagem < Videos.length; Contagem += 1) {
+            Texto.innerHTML += `${Titulos[Contagem]}<div class="videoDescricao"><span>${Videos[Contagem]}</span><span>${Descricao[Contagem]}</span>`
+        }
+    </script>

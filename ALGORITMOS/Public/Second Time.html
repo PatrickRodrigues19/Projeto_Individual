@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecondTime</title>
+    <link rel="stylesheet" href="./CSS/AniRap.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">Noticias Geek</h1>
+            <ul class="navbar">
+                <li class="Geek_bar">
+                    <a href="#">Inicial</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="index.html">Canais</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+
+        <div class="All">
+
+            <div class="Capa">
+
+                <a href="https://www.youtube.com/@SecondTime">
+                    <img class="foto" src="./Assents/Imgs/SecondTime.jpg"></a>
+
+                <div class="Descricao">
+                    <span>O canal SecondTime é conhecido por produzir conteúdo relacionado a música, especialmente rap e
+                        hip-hop. O
+                        canal
+                        ganhou popularidade por suas musicas especiais de inscritos que atigiram milhares de
+                        visualizações,
+                        muitas vezes
+                        com letras relacionadas a jogos, animes, séries e cultura geek em geral.</span>
+                </div>
+
+            </div>
+            <div class="Top">
+
+                <div class="Descricao">
+
+                    <span id="Texto"></span>
+
+                </div>
+                <main>
+
+                    <script>
+
+                        var Titulos = [
+                            '<h2>10º Lugar - Poesia Geek #3 - Magia</h2>',
+                            '<br><br><h2>9º Lugar - Style Akaza (Demon Slayer) | Lua Superior 3 | TrapHits</h2>',
+                            '<br><br><h2>8º Lugar - Style Satoru Gojo (Jujutsu Kaisen) | Feiticeiro Jujutsu</h2>',
+                            '<br><br><h2>7º Lugar - Style Zenitsu (Demon Slayer) | Deus Do Trovão | TrapHits</h2>',
+                            '<br><br><h2>6º Lugar - (REMIX MATUÊ 777 - 666) Style Meliodas (NNT)</h2>',
+                            '<br><br><h2>5º Lugar - (PARÓDIA 7MZ) | Rap dos 10 Mandamentos</h2>',
+                            '<br><br><h2>4º Lugar - Rap dos Pecados Capitais (NNT) - A VONTADE DE TODOS </h2>',
+                            '<br><br><h2>3º Lugar - Style Luas Superiores (Demon Slayer) |TrapHits</h2>',
+                            '<br><br><h2>2º Lugar - Style Yoriichi (Kimetsu No Yaiba) | Respiração Do Sol</h2>',
+                            '<br><br><h2>1º Lugar - Style Kokushibo | Lua Superior 1 (Demon Slayer)</h2>']
+
+                        var Videos = [
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/GTFE6zI-whU?si=_MhXsxmulb26A6pF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/RtN9xxh4WpU?si=RdwcqwcUr_lXT02a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/e_hX8L4oGns?si=2MtEZfEP5ZUsOUD-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/z-WdxsMZxAE?si=M3PhrriD4BHVO9aU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/EiRdvq224jE?si=q4DPFKu88m6ppJvT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/nCKfajEbbQA?si=xN1r3C10WBfevAbW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/RXbrv8gAHl8?si=vh5RGF9EA1LcEteB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/om6EEapls5w?si=you0HEOu72PouS-t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/4Ku0pDrThXM?si=HHMu_f1bX1rObeMi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/E5FU-IZzeHg?si=hON4MW40_xlZqW_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+                        ]
+
+                        var Descricao = [
+                            'Cada indivíduo neste mundo possui uma afinidade única com a magia, representada por um Grimório. Esses Grimórios são livros mágicos que contêm feitiços específicos para cada usuário, evoluindo à medida que o mago ganha experiência e poder. Existem diferentes tipos de magia, desde elemental, como fogo, água, vento e terra, até magias mais especializadas, como luz e escuridão. A afinidade mágica de um indivíduo é determinada por sua personalidade e habilidades inatas.',
+                            'Akaza é o Terceiro Kizuki e é conhecido por sua habilidade de regeneração extraordinária e sua força física impressionante. Ele possui uma personalidade complexa, alternando entre momentos de fúria e reflexão. Originalmente humano, Akaza tornou-se um demônio em busca de força e imortalidade. Sua história é explorada no arco "Trem Infinito", onde ele é destacado como um dos antagonistas principais. Durante esse arco, ele entra em confronto com os Caçadores de Demônios.',
+                            'Gojo é um professor na Escola Técnica de Jujutsu Tokyo e também um usuário extremamente habilidoso de jujutsu. Ele é conhecido por sua personalidade descontraída e despreocupada, muitas vezes agindo de maneira brincalhona e sarcástica. No entanto, por trás dessa aparência, ele é um dos feiticeiros mais formidáveis do universo de "Jujutsu Kaisen". Satoru Gojo desempenha um papel crucial no treinamento de seus alunos, enquanto eles enfrentam ameaças sobrenaturais conhecidas como maldições.',
+                            'No início da história, Zenitsu é introduzido como um jovem espadachim que inicialmente parece covarde e inseguro. Ele se torna um Caçador de Demônios (Demon Slayer) junto com Tanjiro após sobreviver a um ataque de demônios. Zenitsu é conhecido por seu medo extremo de demônios e por sua constante busca por conforto e segurança. Apesar de suas inseguranças, Zenitsu é um espadachim habilidoso, especialmente quando entra em um estado inconsciente conhecido como "Modo Trovão".',
+                            'Meliodas é originalmente apresentado como o líder dos Deadly Sins e dono da taverna "Boar Hat". Apesar da aparência jovem, Meliodas é um dos personagens mais poderosos do universo da série. Ele é conhecido por sua personalidade descontraída, muitas vezes flertando com Elizabeth, a princesa que se junta aos Deadly Sins. Uma característica marcante de Meliodas é sua imortalidade, resultado de uma maldição que o impede de envelhecer ou morrer permanentemente.',
+                            'Cada membro representa um dos mandamentos proibidos, conceitos éticos ou morais considerados pecaminosos. São personagens formidáveis, cada um com habilidades únicas, que servem diretamente ao Rei Demônio.Estarossa, Zeldris, Drole, Gloxinia, Galand, Merascylla, Grayroad, Derieri, Monspiet e estarossa são os dez demônios, cada um encarregado de punir aqueles que violam o princípio associado ao seu mandamento. Eles se tornam uma poderosa força antagonista contra os Seven Deadly Sins.',
+                            'Sete Pecados Capitais" referem-se a um grupo de personagens principais na série, cada um representando um dos sete pecados capitais. Se esse rap segue o enredo da série ou destaca características e eventos específicos dos personagens, pode oferecer uma perspectiva única sobre a história.',
+                            ' Eles são os membros mais poderosos da organização dos Caçadores de Demônios (Hashira) e desempenham um papel crucial na luta contra os demônios. Cada Lua Superior, também conhecido como Hashira, é um mestre em uma forma específica de respiração, a técnica de combate utilizada pelos Caçadores de Demônios. Eles lideram e supervisionam os Caçadores de Demônios menos experientes, e cada um deles é extremamente habilidoso em enfrentar demônios de diferentes níveis de força.',
+                            'Ele é uma figura lendária no mundo da história e é considerado o mais forte Caçador de Demônios (Hashira) que já existiu. Yoriichi é creditado por ser o criador das técnicas de respiração que os Caçadores de Demônios usam em combate. Ele era um usuário excepcional da respiração do sol, uma forma avançada e poderosa dessa técnica. Sua destreza em combate era lendária, sendo capaz de derrotar demônios com extrema eficácia.',
+                            'Kokushibo é um dos vilões, conhecido por sua habilidade excepcional com a espada e seu papel crucial na trama, especialmente durante o arco do trem infinito e pertence aos um dos Doze Kizuki, um grupo de demônios poderosos que servem o vilão principal, Muzan Kibutsuji. Kokushibo é um mestre na "Respiração da Lua", uma forma avançada de técnica de respiração que ele desenvolveu após se tornar um demônio ele utiliza poderosas técnicas de espada e tem a capacidade de criar lâminas cortantes de energia lunar.'
+                        ]
+
+                        for (var Contagem = 0; Contagem < Videos.length; Contagem += 1) {
+                            Texto.innerHTML += `${Titulos[Contagem]}<div class="videoDescricao"><span>${Videos[Contagem]}</span><span>${Descricao[Contagem]}</span>`
+                        }
+                    </script>

@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Next Bravo";
+    src: url(../HTML/Fonts/Next\ Bravo.ttf);
+  }
+  
+  @font-face {
+    font-family: "Classica";
+    src: url(../HTML/Fonts/Classica-Book.ttf);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: gray;
+    background-color: rgba(255, 255, 0, 0.5); */
+    background: linear-gradient(gray, whitesmoke, gray, whitesmoke);
+  }
+  
+  .All {
+    padding: 10px;
+  }
+  
+  .titulo {
+    font-family: "Next Bravo";
+    letter-spacing: 4px;
+    color: #333;
+    /* Cor do texto */
+    text-shadow: 5px 5px 0 #ff0000;
+    /* Contorno vermelho de 1 pixel de deslocamento */
+  }
+  
+  .container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .header .container {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .header {
+    background-color: black;
+  }
+  
+  .header a {
+    text-decoration: none;
+    color: yellow;
+    font-size: 18px;
+    font-family: "Classica";
+  }
+  
+  .navbar {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    color: black;
+  }
+  
+  .titulo {
+    color: yellow;
+    border: red;
+    width: fit-content;
+    font-weight: 500;
+  }
+  
+  .foto {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Capa {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    display: flex;
+    border-radius: 5px;
+  
+  }
+  
+  .Descricao {
+    padding: 20px;
+    display: flex;
+  }
+  
+  span {
+    font-family: "Classica";
+    font-size: 20px;
+    width: 500px;
+  }
+  
+  .Thubnail {
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    display: flex;
+    border-radius: 5px;
+  }
+  
+  .All {
+  width: 80%;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+  }
+
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  #Texto {
+    width: 100%;
+  }
+
+  .videoDescricao {
+    display: flex;
+  }
+
+  .videoDescricao span {
+    padding: 50px;
+    font-size: 18px;
+  }

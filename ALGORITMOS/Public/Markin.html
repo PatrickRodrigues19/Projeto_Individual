@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M4rkin</title>
+    <link rel="stylesheet" href="./CSS/AniRap.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">Noticias Geek</h1>
+            <ul class="navbar">
+                <li class="Geek_bar">
+                    <a href="#">Inicial</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="index.html">Canais</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+
+        <div class="All">
+
+            <div class="Capa">
+
+                <a href="https://www.youtube.com/@M4rkim">
+                    <img class="foto" src="./Assents/Imgs/M4rkimjpg.jpg"></a>
+
+                <div class="Descricao">
+                    <span>O canal M4rkin é conhecido por produzir conteúdo relacionado a música, especialmente rap e
+                        hip-hop. O
+                        canal
+                        ganhou popularidade por suas musicas especiais de inscritos que atigiram milhares de
+                        visualizações,
+                        muitas vezes
+                        com letras relacionadas a jogos, animes, séries e cultura geek em geral.</span>
+                </div>
+
+            </div>
+            <div class="Top">
+
+                <div class="Descricao">
+
+                    <span id="Texto"></span>
+
+                </div>
+                <main>
+
+                    <script>
+
+                        var Titulos = [
+                            '<h2>10º Lugar - Goku (Dragon Ball Z) - Saiyajin | M4rkim</h2>',
+                            '<br><br><h2>9º Lugar - Vilões (One Piece) - Ambição | M4rkim</h2>',
+                            '<br><br><h2>8º Lugar - Barba Branca (One Piece) - Irá Tremer | M4rkim</h2>',
+                            '<br><br><h2>7º Lugar - Batman Que Ri (DC Comics) - Piada Mortal | M4rkim</h2>',
+                            '<br><br><h2>6º Lugar - Doflamingo (One Piece) - Por Um Fio | M4rkim</h2>',
+                            '<br><br><h2>5º Lugar - Buda (Shuumatsu no Valkyrie) - Iluminação | M4rkim</h2>',
+                            '<br><br><h2>4º Lugar - Douma (Kimetsu no Yaiba) - Lua Superior Dois | M4rkim</h2>',
+                            '<br><br><h2>3º Lugar - Hashiras x Kokushibou (Kimetsu no Yaiba) - Castelo Infinito</h2>',
+                            '<br><br><h2>2º Lugar - Máskara (The Mask) - Máscara | M4rkim</h2>',
+                            '<br><br><h2>1º Lugar - Qin Shi Huang (Shuumatsu no Valkyrie) - China | M4rkim</h2>']
+
+                        var Videos = [
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/lUnrcrpSEhc?si=lxzVUljbujBuwS0_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/G54DZL2XpbQ?si=UNE8na1rsvQ0QMTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/VMBah8W3YSM?si=CbVw32_9dD5SzB1L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/ouuaEALaaGg?si=DdcKQHKtmYHgOAab" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/fPuDTdQZzKk?si=oj1KzhbetoX0b_QB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/3M0qJYY_Vu4?si=OF8LyI_6JYewM6rr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/xZPoJKVmU3s?si=3vKeCpZLzNHIUxxX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/kQtKTZn9tI0?si=U62Kbjchm5lvvzB9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/tyVvUFcUtrw?si=RgWTA9m4K_FA6VHk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/EQNPS4TtTzA?si=MJuJaRDeIRj1Jr-f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+                        ]
+
+                        var Descricao = [
+                            ' Nascido como um Saiyajin, uma raça alienígena guerreira, Goku foi enviado à Terra ainda bebê com a missão de conquistá-la. No entanto, devido a um acidente, ele perdeu a memória de sua missão original. Goku é reconhecido por suas formidáveis transformações, sendo a mais famosa a forma de Super Saiyajin. Sua busca por poder o levou a enfrentar inúmeros inimigos poderosos, como Freeza, Cell e Majin Buu, resultando em batalhas épicas e momentos memoráveis.',
+                            ' Desde piratas notórios até membros do Governo Mundial, os antagonistas abrangem uma gama impressionante de personalidades e motivações. A variedade de vilões destaca-se, não apenas em suas ambições, mas também em suas complexidades morais. Muitos vilões em "One Piece" não são unidimensionais; em vez disso, suas histórias exploram as nuances da moralidade, dando aos leitores uma compreensão mais profunda de suas motivações e origens.',
+                            'Como o capitão dos Piratas do Barba Branca, ele ocupa uma posição de destaque entre os quatro Yonkou, os piratas mais poderosos do mundo. Sua reputação é de um líder temível, mas ao mesmo tempo, ele é conhecido por sua benevolência e senso de justiça. A aparência imponente de Barba Branca, com sua longa barba branca e cicatriz distintiva sobre o olho esquerdo, é emblemática de sua presença dominante. Seu coração benevolente, no entanto, destaca-se entre a crueldade muitas vezes associada aos Yonkou.',
+                            'Este personagem faz parte do conceito do "Multiverso Sombrio", uma dimensão alternativa em que os heróis icônicos assumem versões malévolas de si mesmos. Sua transformação ocorre devido à fusão entre o Batman e o Coringa, resultado da exposição do Batman a uma substância letal do Coringa. Essa fusão não apenas altera sua aparência, criando um visual sinistro que mistura elementos dos dois personagens, mas também influencia sua personalidade.',
+                            'Nascido como membro da nobreza no Reino de Dressrosa, sua vida tomou um rumo sombrio quando sua família foi destituída do poder e exilada. Esse período de exílio foi marcado por experiências traumáticas que moldaram profundamente sua visão de mundo. Após se tornar um pirata, Doflamingo estabeleceu os Piratas Donquixote e conquistou o controle sobre Dressrosa usando manipulações políticas e sua habilidade única, a Fruta Ito Ito no Mi, que lhe permite controlar fios.',
+                            'Buda é apresentado como uma entidade mitológica, uma encarnação de Siddhartha Gautama, que desempenha um papel significativo no contexto das batalhas divinas durante o Ragnarok. Sua participação nas batalhas divinas é parte integrante da trama, onde diversas divindades e figuras míticas se envolvem em conflitos que moldarão o destino do mundo. Buda é retratado como possuidor de poderes divinos, refletindo a rica mitologia reimaginada no universo de "Ragnarok".',
+                            ' Como membro dos Doze Kizuki, ele se destaca como um dos demônios mais poderosos sob as ordens de Muzan Kibutsuji. Sua personalidade é uma mistura intrigante de serenidade e crueldade, mascarando uma natureza sádica que aprecia o sofrimento humano. A lealdade de Douma a Muzan Kibutsuji é evidente, alinhando-se com o objetivo geral dos Doze Kizuki de aumentar o número de demônios e fortalecer a linhagem demoníaca, sua história culmina em uma batalha emocionante contra os protagonistas.',
+                            'Gyomei é um dos Hashira, os mais fortes caçadores de demônios. Sanemi é o Hashira do Vento e ocupa a posição de "Pilar do Vento". Muichiro, também conhecido como "Pilar da Névoa", é o Hashira da Névoa. Kokushibo, originalmente conhecido como Michikatsu Tsugikuni, é um antigo Caçador de Demônios que se tornou um demônio poderoso. Ele é o antagonista principal no arco "Infinito do Mugen Train". Cada um desses personagens contribui de maneira única para a trama de "Demon Slayer".',
+                            'A história segue Stanley Ipkiss, um homem azarado que encontra uma misteriosa máscara antiga que concede poderes sobrenaturais a quem a usa. Quando Stanley coloca a máscara, ele se transforma em "The Mask", um personagem verde e cartunesco com habilidades sobre-humanas. A personalidade de "The Mask" é extremamente excêntrica e caótica, apresentando uma mistura única de comédia slapstick e comportamento imprevisível.',
+                            'Qin Shi Huang é apresentado como uma figura histórica proeminente e estrategista astuto. Escolhido para representar a humanidade na batalha cósmica conhecida como Ragnarok, ele enfrenta Poseidon, um dos deuses do Olimpo, em uma luta intensa. Qin Shi Huang, o primeiro imperador da China, é retratado não apenas por suas realizações históricas, como unificar o país e construir a Grande Muralha, mas também por sua notável inteligência e habilidades estratégicas. Sua participação no Ragnarok.'
+                        ]
+
+                        for (var Contagem = 0; Contagem < Videos.length; Contagem += 1) {
+                            Texto.innerHTML += `${Titulos[Contagem]}<div class="videoDescricao"><span>${Videos[Contagem]}</span><span>${Descricao[Contagem]}</span>`
+                        }
+                    </script>

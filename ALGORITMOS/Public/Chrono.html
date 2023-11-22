@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrono</title>
+    <link rel="stylesheet" href="./CSS/Chrono.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">Noticias Geek</h1>
+            <ul class="navbar">
+                <li class="Geek_bar">
+                    <a href="#">Inicial</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="index.html">Canais</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+
+        <div class="All">
+
+            <div class="Capa">
+
+                <a href="https://www.youtube.com/@Chrono0">
+                    <img class="foto" src="./Assents/Imgs/Chrono.jpg"></a>
+
+                <div class="Descricao">
+                    <span>O canal Chrono é conhecido por produzir conteúdo relacionado a música, especialmente rap e
+                        hip-hop. O canal
+                        ganhou popularidade por suas musicas especiais de inscritos que atigiram milhares de
+                        visualizações, muitas vezes
+                        com letras relacionadas a jogos, animes, séries e cultura geek em geral.</span>
+                </div>
+
+            </div>
+
+            <div class="Top">
+
+                <div class="Descricao">
+
+                    <span id="Texto"></span>
+
+                </div>
+
+    </main>
+
+    <script>
+
+        var Titulos = [
+            '<h2>10º Lugar - Vlad Drácula (Castlevania) - SANGUE INOCENTE | Chrono</h2>',
+            '<br><br><h2>9º Lugar - Frankenstein (Junji ito) - PARTE POR PARTE | Chrono</h2>',
+            '<br><br><h2>8º Lugar - Choso (Jujutsu Kaisen) - PINTURA DA MORTE | Chrono</h2>',
+            '<br><br><h2>7º Lugar - Joui Jouki (Ordem Paranormal) - MARCADO PELA MORTE | Chrono</h2>',
+            '<br><br><h2>6º Lugar -Gilgamesh (Fate) - O REI DOS HERÓIS - ChronoRap (Prod. Tander)</h2>',
+            '<br><br><h2>5º Lugar - Yoshikage Kira (Jojo s Bizarres Adventure) - VIDA TRANQUILA</h2>',
+            '<br><br><h2>4º Lugar - Diavolo/Doppio - O Rei Escarlate - | ChronoRap -13 (Prod. Tander)</h2>',
+            '<br><br><h2>3º Lugar - Destino de Sangue | Vilões (JoJos Bizarre Adventure) | ESPECIAL 10K</h2>',
+            '<br><br><h2>2º Lugar - Campeões (Pokémon) - CAMINHO DA VITÓRIA | Chrono</h2>',
+            '<br><br><h2>1º Lugar - Enrico Pucci (Jojos Bizarres Adventure) - MADE IN HEAVEN</h2>'
+        ]
+
+        var Videos = [
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/qnACJZm_BYw?si=h_Gy_3UDaKV1pMZp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/xJG1qfm9v7Y?si=6y2HB1P-k6f_YhJv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/l02iHNAr-zQ?si=ET-mY5UDLIMdKped" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/7Vg3WozBypI?si=48G_BtPg-FiVQASk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/v_OHCVR45YM?si=DtXeQH-l3BHGBex7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/jpzfGSwG3U4?si=6aeE1dDQ4Hz9xub2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/ZNNhXS8-trU?si=m9tluduk873tGJWr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/DSQU6JPfyB4?si=eBdeSl_aBiDw5W6v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/nLAJ4_eORd4?si=CuTZghiMUSyTl3fs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/vxEpiLInxjA?si=e2MMvt3_TXLlahC-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+        ]
+
+        var Descricao = [
+            'A história de Vlad Drácula muitas vezes incorpora elementos de mitologia, ficção gótica e folclore. Sua motivação para lutar contra os Belmonts e outros heróis varia nas diferentes iterações da série, mas geralmente envolve vingança, desejo de poder ou uma visão distorcida de justiça. Drácula é retratado como um ser imortal e poderoso, capaz de controlar as forças das trevas e convocar hordas de monstros para cumprir seus desejos malévolos.',
+            'Victor Frankenstein é um autodidata desde a infância e explorador do mundo que o cercava, que mais tarde torna-se estudante de ciências naturais, pois sempre fora apaixonado pelos mistérios e possibilidades que elas evocavam. Ele, então, reúne partes de corpos roubadas de um cemitério, une-as uma a uma e dá início ao que se tornaria, dentro de poucos instantes, o início de sua perdição: o monstro, grotesco, incompreendido e aterrorizante, vive e, com ele, morre a cada momento um pouco da sanidade',
+            'Ele é nascido da fusão de um humano com amaldiçoado, especificamente um irmão amaldiçoado. Choso é um dos irmãos de Naoya Zenin e é conhecido por sua força e habilidades em combate. Sua história é marcada por conflitos com os protagonistas da série, especialmente Itadori Yuji e seus amigos. Choso é inicialmente apresentado como um inimigo, mas ao longo da história, suas motivações e sentimentos se tornam mais complexos.',
+            'Joui Jouki foi uma dos protagonistas da série Ordem Paranormal, presente em O Segredo na Floresta, Desconjuração e Calamidade.Ele era um ginasta olímpico que, durante uma viagem para o Brasil junto de seus amigos, acabou sofrendo um ataque por uma criatura Paranormal, sendo salvo por Elizabeth Webber e Thiago Fritz. Os dois acabam virando seus mentores, e então Joui se junta à Ordo Realitas. Ele foi um dos sobreviventes da missão, mesmo ficando à beira da insanidade após ver a trágica cena do fim de Santo Berço.',
+            'Gilgamesh é um dos Servos da Classe Archer, e ele se destaca por sua personalidade arrogante e autoconfiante. Ele é frequentemente retratado como o Rei dos Heróis, possuindo uma vasta coleção de tesouros e relíquias místicas. Seu Noble Phantasm mais icônico é a "Cadeia do Céu", que contém os tesouros do mundo. Além disso, ele possui a habilidade "Enuma Elish", um ataque devastador que invoca uma tempestade de espadas.',
+            'Yoshikage Kira é o vilão principal da Parte 4 de "Jojos Bizarre Adventure". Ele é apresentado como um assassino em série extremamente cuidadoso e metódico, cujo maior desejo é manter uma vida tranquila e discreta. Kira é um homem de negócios bem vestido e aparentemente normal, mas esconde uma natureza psicopata.Seu Stand, chamado "Killer Queen", possui a capacidade de criar bombas mortais que explodem com um simples toque.',
+            'Diavolo e Doppio são personagens da Parte 5 de "Jojos Bizarre Adventure", intitulada "Golden Wind" (Vento Aureo). Eles são, na verdade, duas personalidades distintas compartilhando o mesmo corpo. A dinâmica entre Diavolo e Doppio é central para a trama de "Golden Wind", com suas interações complexas e as lutas resultantes contra os protagonistas da série. A revelação da verdadeira natureza de Doppio e Diavolo adiciona camadas à narrativa, tornando-os personagens fascinantes na história.',
+            'Dio Brando: O principal antagonista, Dio é um vilão carismático que busca poder através da máscara de pedra e do uso de vampirismo. (Kars, Esidisi, Wamuu): Esses antagonistas antigos são seres superpoderosos que buscam a dominação do mundo. Yoshikage Kira: Um assassino serial com uma obsessão por mãos. Diavolo: O líder misterioso da Passione, uma gangue criminosa italiana. Enrico Pucci: Um padre com uma obsessão religiosa que busca realizar um plano para criar um novo universo.',
+            'Esses Campeões desempenham papéis importantes no desenvolvimento da trama, oferecendo desafios formidáveis para os protagonistas e contribuindo para a emoção das batalhas Pokémon no anime.',
+            'Enrico Pucci, inicialmente apresentado como um padre, é revelado como um estrategista inteligente e fanático. Sua obsessão com a criação de um novo universo é motivada suas crepor nças religiosas e uma visão de justiça e redenção. O Stand de Pucci é chamado "Whitesnake" e possui a capacidade única de manipular memórias e também tem outras habilidades relacionadas à criação e controle de Stands. Essa habilidade de manipulação de memória desempenha um papel crucial em sua busca para atingir seu objetivo final.'
+        ]
+
+        for (var Contagem = 0; Contagem < Videos.length; Contagem += 1) {
+            Texto.innerHTML += `${Titulos[Contagem]}<div class="videoDescricao"><span>${Videos[Contagem]}</span><span>${Descricao[Contagem]}</span>`
+        } 
+    </script>

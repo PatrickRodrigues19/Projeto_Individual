@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pejota</title>
+    <link rel="stylesheet" href="./CSS/AniRap.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">Noticias Geek</h1>
+            <ul class="navbar">
+                <li class="Geek_bar">
+                    <a href="#">Inicial</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="index.html">Canais</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+
+        <div class="All">
+
+            <div class="Capa">
+
+                <a href="https://www.youtube.com/@PeJota10">
+                    <img class="foto" src="./Assents/Imgs/PeJota.jpg"></a>
+
+                <div class="Descricao">
+                    <span>O canal Pejota é conhecido por produzir conteúdo relacionado a música, especialmente rap e
+                        hip-hop. O
+                        canal
+                        ganhou popularidade por suas musicas especiais de inscritos que atigiram milhares de
+                        visualizações,
+                        muitas vezes
+                        com letras relacionadas a jogos, animes, séries e cultura geek em geral.</span>
+                </div>
+
+            </div>
+            <div class="Top">
+
+                <div class="Descricao">
+
+                    <span id="Texto"></span>
+
+                </div>
+                <main>
+
+                    <script>
+
+                        var Titulos = [
+                            '<h2>10º Lugar - (REMIX HYLANDER) Jinchuuriki Gang 🦊🐙 (Naruto)</h2>',
+                            '<br><br><h2>9º Lugar - One Piece Trap 🏴‍☠️ ( SuperNovas, Yonkou, Almirantes)</h2>',
+                            '<br><br><h2>8º Lugar - One Piece Trap II 🏴‍☠️ ( SuperNovas, Yonkou, Almirantes e Mugiwara)</h2>',
+                            '<br><br><h2>7º Lugar - Shichibukai Trap 🏴‍☠️ (One Piece) | LORDES DO MAR |</h2>',
+                            '<br><br><h2>6º Lugar - Os Melhores do Mundo Trap ⚽⚽ (Blue Lock) | The Best |</h2>',
+                            '<br><br><h2>5º Lugar - SuperNovas Trap ☠️ (One Piece) | PIOR GERAÇÃO</h2>',
+                            '<br><br><h2>4º Lugar - RENEGADO Trap 🖤😈 (Naruto) | Se essa Vila |</h2>',
+                            '<br><br><h2>3º Lugar - Almirantes Trap⚓(One Piece)</h2>',
+                            '<br><br><h2>2º Lugar - Mugiwara Trap 👒 (One Piece) | CHAPÉU DE PALHA</h2>',
+                            '<br><br><h2>1º Lugar - Yonkou Trap 🏴‍☠️ (One Piece)</h2>']
+
+                        var Videos = [
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/JTKATsAOR9E?si=b2f5TCIhhyOEENX9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/1KKH9W_TjsU?si=nT6sRYdYk-o0wFus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/D-6X6zFUg0c?si=iFlmrzgT-B9wishZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/-ULnaEnOXog?si=bowha6djtjZ5-n5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/RJqRRo_rrgM?si=aKDB8wqJI4Fvhk4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/6THYYIo5XNs?si=YYiYZjcFcTmwws-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/bK0JyaXzhEs?si=Ql_CGgDjRnRQ7DWX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/ZpCB-XvTBdc?si=d6V_Zm5crhuP6HwF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/NHQEhG6Q1f8?si=PQev-QNdaI3pKCRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/jNb6aO4n0Y4?si=kakp8RmdmSuKAgOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+                            ]
+
+                        var Descricao = [
+                            'O processo de tornar alguém um Jinchuriki envolve selar uma dessas poderosas criaturas dentro do corpo do hospedeiro, proporcionando habilidades únicas, como força sobre-humana, resistência e técnicas especiais associadas à Besta. No entanto, ser um Jinchuriki não é apenas uma fonte de poder; é também uma carga pesada. A sociedade muitas vezes os estigmatiza e isola devido ao medo e à incompreensão em relação às Bestas com Cauda, que são associadas a destruição e caos.',
+                            'As Supernovas, conhecidas como Onze Supernovas ou Supernovatos, são um grupo de piratas notáveis que ganharam notoriedade simultaneamente ao entrar no Novo Mundo. Os Yonkou, ou "Quatro Imperadores", são quatro piratas extremamente poderosos que governam partes significativas do Novo Mundo. Por outro lado, os Almirantes são os principais oficiais da Marinha Mundial, representando a força militar mais poderosa da organização. ',
+                            'As Supernovas, conhecidas como Onze Supernovas ou Supernovatos, são um grupo de piratas notáveis que ganharam notoriedade simultaneamente ao entrar no Novo Mundo. Os Yonkou, ou "Quatro Imperadores", são quatro piratas extremamente poderosos que governam partes significativas do Novo Mundo. Por outro lado, os Almirantes são os principais oficiais da Marinha Mundial, representando a força militar mais poderosa da organização. Mugiwara é a tripulação principal do Luffy, conhecida como os Chapéus de Palha',
+                            ' Essa coalizão de piratas poderosos é oficialmente reconhecida pelo Governo Mundial, recebendo tratamento especial em troca de seus serviços. Cada membro é nomeado por suas habilidades excepcionais e sua disposição em colaborar com o governo. Esses piratas recebem benefícios exclusivos, como anistia por crimes passados, liberdade para viver sem restrições e recompensas financeiras. Em contrapartida, eles concordam em cooperar com o Governo Mundial em determinadas situações.',
+                            'A história gira em torno de Isagi Yoichi, um jogador de futebol talentoso que se encontra em uma instalação chamada Blue Lock, um programa de treinamento intensivo para atacantes de elite. O objetivo é selecionar o atacante japonês perfeito para a próxima Copa do Mundo. Isagi e outros jogadores talentosos competem ferozmente, enfrentando desafios físicos e mentais enquanto buscam aprimorar suas habilidades e se destacar.',
+                            'Esses piratas, conhecidos oficialmente como os "Onze Supernovas" ou "Piratas da Pior Geração", ganharam destaque após a execução de Portgas D. Ace e a revelação da existência do One Piece. Os Supernovas são capitães de tripulações piratas que alcançaram notoriedade por desafiar o governo mundial e as forças marítimas. Eles foram rotulados como uma geração promissora de piratas e se destacam por suas recompensas substanciais. ',
+                            'A Akatsuki é originalmente formada por membros de aldeias ocultas que abandonaram suas aldeias e se tornaram mercenários. Cada membro da Akatsuki é geralmente muito habilidoso e possui poderosas habilidades ninja. O objetivo principal da Akatsuki, conforme revelado na história, é realizar uma série de planos ambiciosos, incluindo a captura de todos os Bijus (bestas com cauda) para alcançar seus objetivos.',
+                            'Os almirantes são personagens de destaque no mundo da Marinha, uma das três grandes potências. Os almirantes são responsáveis por liderar as forças militares da Marinha e desempenham um papel crucial na manutenção da ordem mundial. Cada almirante é extremamente poderoso, possuindo habilidades incríveis devido ao uso de frutas do diabo do tipo Logia. Essas habilidades lhes concedem a capacidade de controlar, criar e transformar seus corpos em substâncias específicas.',
+                            'A tripulação é formada por membros diversos, cada um com habilidades únicas e um passado intrigante. Roronoa Zoro, o espadachim, Nami, a navegadora talentosa, Usopp, o atirador habilidoso, Sanji, o cozinheiro com habilidades marciais únicas, Tony Tony Chopper, a rena médica com a habilidade de se transformar, Nico Robin, a arqueóloga com um passado misterioso, Franky, o construtor de navios ciborgue, Brook, o esqueleto músico e espadachim, e Jinbe, o timoneiro e mestre em artes marciais.',
+                            'Os Yonkou, ou Quatro Imperadores, em "One Piece", representam um grupo de quatro dos piratas mais formidáveis e influentes no vasto mundo. Estes poderosos capitães de piratas exercem uma imensa influência sobre as terras e mares do Novo Mundo, tornando-se figuras de destaque na narrativa. A dinâmica entre os Yonkou é marcada por conflitos, rivalidades e alianças temporárias. Suas ações e influência desempenham um papel crucial na trama de "One Piece", criando obstáculos significativos para os Chapéus de Palha'                 
+                             ]
+
+                        for (var Contagem = 0; Contagem < Videos.length; Contagem += 1) {
+                            Texto.innerHTML += `${Titulos[Contagem]}<div class="videoDescricao"><span>${Videos[Contagem]}</span><span>${Descricao[Contagem]}</span>`
+                        }
+                    </script>

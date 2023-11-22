@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basara</title>
+    <link rel="stylesheet" href="./CSS/AniRap.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">Noticias Geek</h1>
+            <ul class="navbar">
+                <li class="Geek_bar">
+                    <a href="#">Inicial</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="index.html">Canais</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+
+        <div class="All">
+
+            <div class="Capa">
+
+                <a href="https://www.youtube.com/@BasaraMusic">
+                    <img class="foto" src="./Assents/Imgs/Basara.jpg"></a>
+
+                <div class="Descricao">
+                    <span>O canal Basara é conhecido por produzir conteúdo relacionado a música, especialmente rap e
+                        hip-hop. O canal
+                        ganhou popularidade por suas musicas especiais de inscritos que atigiram milhares de
+                        visualizações, muitas vezes
+                        com letras relacionadas a jogos, animes, séries e cultura geek em geral, "Basara" é um termo
+                        japonês que pode
+                        ter diferentes interpretações. Tradicionalmente, pode significar algo extravagante, incomum ou
+                        até mesmo
+                        rebelde.</span>
+                </div>
+
+            </div>
+
+            <div class="Top">
+
+                <div class="Descricao">
+
+                    <span id="Texto"></span>
+
+                </div>
+
+    </main>
+
+    <script>
+
+        var Titulos = [
+            '<h2>10º Lugar - Sukuna VS. Satoru Gojo | Santuário Infinito (Jujutsu Kaisen) | Basara</h2>',
+            '<br><br><h2>9º Lugar - Canção Solo | Brook (One Piece) | Basara</h2>',
+            '<br><br><h2>8º Lugar - Deus da Lua | Kokushibo (Demon Slayer) | Basara</h2>',
+            '<br><br><h2>7º Lugar - Cirurgião da Morte | Law (One Piece) | Basara</h2>',
+            '<br><br><h2>6º Lugar - Pilar das Chamas | Rengoku (Demon Slayer) | Basara</h2>',
+            '<br><br><h2>5º Lugar - Berserk | Guts (Berserk) | Basara</h2>',
+            '<br><br><h2>4º Lugar - Trio Monstro | One Piece | Basara, @Enygma. & Daarui</h2>',
+            '<br><br><h2>3º Lugar - A Nova Era | Yonkous (One Piece) | Basara</h2>',
+            '<br><br><h2>2º Lugar - Luar de Sangue | Luas Superiores (Demon Slayer) | Basara</h2>',
+            '<br><br><h2>1º Lugar - Gear 5 | Luffy Pt. 3 (One Piece) | Basara</h2>'
+        ]
+
+        var Videos = [
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/H1vbVvJZomI?si=EvLUVQv48quTXxtu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/5Q40mhsgl6Q?si=AaHXXxGzzd2TAFeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/4ig_-QgigZU?si=MFGV5tUVMeVXYy_q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/C9sERHrGl8Y?si=9SKUyJJTXV-wl_8R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/yYFBHx6cCHE?si=6G54Se9XtnY5fwMC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/YNE2epe9X4o?si=HItPD2opcUWqBboX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/BlSz74VQtag?si=wPeUf7PHTj1B-biW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/xvlNe_6U0E4?si=lwP3yX95c8EQSsqa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/JXDnxZe4PzY?si=KJm1v2D5ahDhJ2Vg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/9jbhPLDOEaw?si=YjYFk4nqv0I6_IuY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+        ]
+
+        var Descricao = [
+            'Sukuna o Rei das maldições contra o feiticeiro Jujutsu mais poderoso do mundo Satoru Gojo onde ambos têm habilidades formidáveis santuário malevolente e vazio roxo ambas sendo expansão de domínio, essa batalha decidira o futuro de todas as pessoas.',
+            'Brook é um esqueleto músico e membro dos Chapéus de Palha em One Piece, Brook era um músico e capitão de um navio chamado "Rumbar Pirates" antes de morrer. Após a morte, ele comeu a Yomi Yomi no Mi, uma Akuma no Mi que o trouxe de volta à vida. Devido à Yomi Yomi no Mi, Brook ganhou uma segunda chance na vida, mas isso custou sua carne, é um espadachim habilidoso e tem uma técnica de esgrima única chamada "Hanauta Sancho: Yahazu Giri".',
+            'Kokushibo é um dos vilões, conhecido por sua habilidade excepcional com a espada e seu papel crucial na trama, especialmente durante o arco do trem infinito e pertence aos um dos Doze Kizuki, um grupo de demônios poderosos que servem o vilão principal, Muzan Kibutsuji. Kokushibo é um mestre na "Respiração da Lua", uma forma avançada de técnica de respiração que ele desenvolveu após se tornar um demônio ele utiliza poderosas técnicas de espada e tem a capacidade de criar lâminas cortantes de energia lunar.',
+            'Law é um pirata e um médico altamente habilidoso. A Akuma no Mi concede a Law o poder de criar uma "sala" onde ele pode realizar cirurgias em um espaço tridimensional, manipular objetos e até mesmo trocar partes do corpo entre as pessoas. Essa habilidade única o torna uma figura formidável em batalhas e estratégias. Law ao longo da história, ele forma uma aliança com Luffy e outros piratas para derrubar o imperador Donquixote Doflamingo.',
+            'Rengoku é o Pilar das Chamas, uma das posições de elite na organização de caçadores de demônios. Ele é conhecido por sua natureza determinada, habilidades excepcionais em combate e pelo uso de técnicas poderosas relacionadas ao fogo. Rengoku se destaca não apenas por suas habilidades de luta impressionantes, mas também por sua dedicação à missão de proteger os inocentes e eliminar os demônios.',
+            'A história de Guts é marcada por uma vida extremamente difícil e cheia de tragédias. Ele nasceu a partir de uma situação violenta e cresceu como um mercenário em um mundo medieval sombrio e brutal. Durante sua juventude, Guts se torna um membro da Tropa dos Falcões, liderada pelo carismático Griffith. No entanto, sua vida toma um rumo sombrio quando eventos traumáticos levam à queda da Tropa dos Falcões, resultando em uma série de acontecimentos dolorosos para Guts.',
+            'Luffy seu objetivo é se tornar o Rei dos Piratas, e ele possui a habilidade de esticar seu corpo como resultado de comer a Gomu Gomu no Mi, uma fruta do diabo do tipo borracha.  Zoro é o espadachim da tripulação e o vice-capitão ele é um espadachim habilidoso que luta usando três espadas simultaneamente, seguindo um estilo de luta de três espadas chamado "Santoryu".  Sanji ele é especialista em artes marciais, usando principalmente as pernas para lutar, sendo mestre em um estilo chamado "Black Leg Style"',
+            'Os Yonkou, também conhecidos como os "Quatro Imperadores," são um grupo de quatro dos piratas mais poderosos e influentes no mundo de One Piece. Os Yonkou são figuras notáveis e desempenham papéis cruciais na dinâmica mundial da série. Cada Yonkou comanda uma frota poderosa e governa uma porção significativa do Novo Mundo.',
+            'São um grupo de demônios extremamente poderosos e elite que servem diretamente ao Demônio Muzan Kibutsuji. Cada membro desse grupo é chamado de "Lua Superior" e é designado por um número de lua crescente, representando sua posição hierárquica em relação aos outros. Os membros conhecidos das Luas Superiores incluem personagens como Kokushibo, Douma, Akaza, Gyutaro e Daki, e Enmu.',
+            'O Gear 5th simboliza liberdade. Sua ativação é anunciada pelo som dos Tambores da Libertação. Quando ativada, Luffy exibe uma força física e liberdade nunca antes vistas. Essa transformação também afeta a aparência de Luffy, com roupas e cabelos brancos, além de refletir em sua personalidade, que se torna mais travessa. Além de ser uma das transformações mais poderosas de Luffy, o Gear 5 também marca um clímax na batalha contra Kaido, um dos vilões principais, e marca o fim do arco País de Wano.'
+        ]
+
+        for (var Contagem = 0; Contagem < Videos.length; Contagem += 1) {
+            Texto.innerHTML += `${Titulos[Contagem]}<div class="videoDescricao"><span>${Videos[Contagem]}</span><span>${Descricao[Contagem]}</span>`
+        }       
+    </script>

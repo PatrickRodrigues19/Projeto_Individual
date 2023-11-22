@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaito</title>
+    <link rel="stylesheet" href="./CSS/AniRap.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">Noticias Geek</h1>
+            <ul class="navbar">
+                <li class="Geek_bar">
+                    <a href="#">Inicial</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="index.html">Canais</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+
+        <div class="All">
+
+            <div class="Capa">
+
+                <a href="https://www.youtube.com/@KaitoOFC">
+                    <img class="foto" src="./Assents/Imgs/Kaitojpg.jpg"></a>
+
+                <div class="Descricao">
+                    <span>O canal Kaito é conhecido por produzir conteúdo relacionado a música, especialmente rap e
+                        hip-hop. O
+                        canal
+                        ganhou popularidade por suas musicas especiais de inscritos que atigiram milhares de
+                        visualizações,
+                        muitas vezes
+                        com letras relacionadas a jogos, animes, séries e cultura geek em geral.</span>
+                </div>
+
+            </div>
+            <div class="Top">
+
+                <div class="Descricao">
+
+                    <span id="Texto"></span>
+
+                </div>
+                <main>
+
+                    <script>
+
+                        var Titulos = [
+                            '<h2>10º Lugar - Gênio | Itoshi Sae (Blue Lock) | Kaito</h2>',
+                            '<br><br><h2>9º Lugar - Bill Cipher (Gravity Falls) | Estranhagedon | Kaito</h2>',
+                            '<br><br><h2>8º Lugar - Baki vs Yujiro (Baki The Grappler) | Assuntos de Família | Kaito</h2>',
+                            '<br><br><h2>7º Lugar - Harry Potter (Harry Potter) | Escolhido | Kaito</h2>',
+                            '<br><br><h2>6º Lugar - Hakari & Yuta (Jujutsu Kaisen) | Potencial Infinito</h2>',
+                            '<br><br><h2>5º Lugar - Gojo vs Sukuna (Jujutsu Kaisen) | Expansão de Domínio </h2>',
+                            '<br><br><h2>4º Lugar - Griffith (Berserk) | Falcão Branco | Kaito</h2>',
+                            '<br><br><h2>3º Lugar - Springtrap (FNAF) | Eu Sempre Volto | Kaito</h2>',
+                            '<br><br><h2>2º Lugar - Kaidou (One Piece) | Dragão | Kaito</h2>',
+                            '<br><br><h2>1º Lugar - Maki (Jujutsu Kaisen) | Zero | Kaito</h2>']
+
+                        var Videos = [
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/KL_Mb5K880E?si=UZcq8m9dZzPHvcwt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/NtcuQFT0mIw?si=izXWBL-oVAnZbcOh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/LuxqwFdA6FU?si=N_lSNXapZGa0nIcL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/UHNwph2IzQ0?si=ocfq2CHZpcCqZJI1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/CNu8l8u7xpw?si=ZP8pywTzODGoJSMR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/jRk2d53oCuY?si=S_rQ69mKowOxcLjF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/84dRQeOrTZw?si=DkxMOymkyzDhszRv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/8S5uLqT0BTY?si=8qshK9VEemzfpYMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/3UEP-T7yzqY?si=1wKTuYJ9qt3mjszF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/vBE05ZqWqpw?si=acvqlLbl6mO5ddHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+                            ]
+
+                        var Descricao = [
+                            'Sae Itoshi é um jogador de futebol prodígio, conhecido como o melhor jogador do Japão. Sae também é membro do New Generation World XI. O principal objetivo de Sae antes do início da série era se tornar o melhor atacante do mundo, e por sua vez, o melhor jogador do mundo, mas depois de deixar o Japão e ir a liga profissional na Espanha, ele mudou seu sonho para se tornar o melhor meio-campista do mundo depois de perceber o quão fraco é o futebol japonês.',
+                            'O personagem é conhecido por sua natureza caótica, manipuladora e astuta. Ele reside em uma dimensão alternativa chamada "Weirdmageddon" e, ao longo da série, busca entrar no mundo real para causar caos e destruição. Bill Cipher é capaz de controlar mentes, distorcer a realidade e realizar uma variedade de truques mágicos. A primeira aparição significativa de Bill Cipher é na segunda temporada da série, quando ele faz um acordo com o personagem principal, Dipper Pines.',
+                            'O confronto entre Baki e Yujiro é construído ao longo da história, com Baki buscando se tornar mais forte para derrotar seu pai e provar seu valor como lutador. Yujiro, por sua vez, é retratado como um adversário formidável e desafiador. O relacionamento entre pai e filho é complexo, cheio de rivalidade e um desejo constante de superação. O ápice desse confronto ocorre em várias partes da série, em diferentes arcos narrativos. O autor Keisuke Itagaki criou momentos intensos.',
+                            'Harry James Potter, a característica mais marcante de Harry é a cicatriz em forma de raio na testa, resultado da tentativa de Voldemort de matá-lo quando era um bebê, mas que inexplicavelmente falhou. Essa cicatriz também o conecta mentalmente a Voldemort, permitindo que Harry sinta as emoções e, ocasionalmente, veja as experiências do vilão. Ao descobrir que é um bruxo, Harry ingressa na Escola de Magia e Bruxaria de Hogwarts, onde faz amizade com Ron Weasley e Hermione Granger.',
+                            'Kinji é um tipo de pessoa muito egocêntrica que pouco se importa com as regras e regulamentos do Jujutsu High. Kinji é um indivíduo que gosta de ver as pessoas se perderem em suas paixões. Ele descreve isso como a “febre” das pessoas escaldante. Yuta era um garoto muito tímido e solitário que sofreu muito bullying enquanto crescia. Devido ao fato de Rika assombrar grande parte de sua infância, Yuta não conseguiu se conectar com outras pessoas e perdeu toda a confiança em si mesmo.',
+                            ' Sukuna, é uma Maldição lendária temida por sua crueldade. Mesmo selado em Dedos Malditos, sua influência persiste e se torna central na trama quando Yuji Itadori, o protagonista, se torna seu hospedeiro. Gojo Satoru, por outro lado, é um feiticeiro extremamente poderoso e professor na Escola Técnica de Jujutsu de Tóquio. Possui a habilidade "Limitless" e é considerado o mais forte. Apesar de sua atitude descontraída, Gojo desempenha um papel crucial no treinamento dos protagonistas.',
+                            'Ele é inicialmente apresentado como o carismático líder do Bando do Falcão, um grupo de mercenários, cujas ambições vão além das simples conquistas militares. A ambição de Griffith é grandiosa, almejando alcançar o mais alto nível de poder e status. No entanto, o ponto de virada crucial em sua história ocorre durante o evento traumático conhecido como Eclipse. Em um momento desesperador, Griffith faz um pacto com os God Hand, seres demoníacos, para realizar seus desejos.',
+                            'A história de Springtrap está intrinsecamente ligada a um acidente ocorrido anos antes, quando um funcionário ficou preso no traje Spring Bonnie durante uma apresentação. Esse incidente resultou em morte e, eventualmente, na possessão do traje, transformando-o em Springtrap. A aparência de Springtrap é notavelmente danificada e assustadora, com seu exoesqueleto exposto. Ao longo da série, Springtrap continua a desempenhar um papel significativo na trama, adicionando um elemento de horror à narrativa.',
+                            ' Conhecido como "Kaidou das Feras", sua reputação é baseada em sua busca incessante para criar um exército de criaturas poderosas. Ele é retratado como alguém quase indestrutível e imortal, com uma mentalidade que o leva a procurar situações de vida ou morte para encontrar emoções verdadeiras. Além de seu papel como Yonkou, Kaidou é o soberano da Ilha dos Gigantes e tem interesses significativos no País de Wano. Sua presença cria uma influência dominante no submundo do mundo de "One Piece".',
+                            ' Sua história é permeada pela discriminação dentro de sua própria família devido à sua incapacidade de ver maldições, uma habilidade altamente valorizada entre os feiticeiros. Determinada a superar essa desvantagem, Maki embarca em um rigoroso treinamento físico e se torna uma especialista em lutas corpo a corpo e no uso de armas amaldiçoadas. Apesar de sua ausência de poderes visuais, Maki destaca-se como uma feiticeira formidável, desafiando as expectativas e normas estabelecidas.'
+
+
+                             ]
+
+                        for (var Contagem = 0; Contagem < Videos.length; Contagem += 1) {
+                            Texto.innerHTML += `${Titulos[Contagem]}<div class="videoDescricao"><span>${Videos[Contagem]}</span><span>${Descricao[Contagem]}</span>`
+                        }
+                    </script>

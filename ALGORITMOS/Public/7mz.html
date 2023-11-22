@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Minutoz</title>
+    <link rel="stylesheet" href="./css/7mz.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">Noticias Geek</h1>
+            <ul class="navbar">
+                <li class="Geek_bar">
+                    <a href="#">Inicial</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="index.html">Canais</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <main>
+
+        <div class="All">
+
+            <div class="Capa">
+
+                <a href="https://www.youtube.com/@7minutoz">
+                    <img class="foto" src="./Assents/Imgs/7mz.jpg"></a>
+
+
+                <div class="Descricao">
+                    <span> O canal 7 Minutoz é conhecido por produzir conteúdo relacionado a música, especialmente rap e
+                        hip-hop. O canal ganhou popularidade por suas paródias e remixes de músicas famosas, muitas
+                        vezes
+                        com letras relacionadas a jogos, animes, séries e cultura geek em geral. Os criadores do canal
+                        têm o
+                        objetivo de entreter o público com suas versões criativas e humorísticas das músicas populares,
+                        adaptando as letras para temas e contextos específicos da cultura nerd. </span>
+                </div>
+
+            </div>
+
+
+            <div class="Top">
+
+                <div class="Descricao">
+
+                    <span id="Texto"></span>
+
+                </div>
+    </main>
+    <script>
+
+        var Titulos = [
+            '<h2>10º Lugar- Rap do Boruto - FILHO DE UM HOKAGE | NERD HITS</h2>',
+            '<br><br><h2>9º Lugar- Rap do Minato (Naruto) - O DEVER DE UM PAI | NERD HITS</h2>',
+            '<br><br><h2>8º Lugar-Rap do Meliodas (Nanatsu no Taizai) - EU SOU O CAPITÃO | NERD HITS</h2>',
+            '<br><br><h2>7º Lugar- Rap do Naruto - O SÉTIMO HOKAGE | NERD HITS</h2>',
+            '<br><br><h2>6º Lugar- Rap do Zoro (One Piece) - O MAIOR ESPADACHIM DO MUNDO | NERD HITS</h2>',
+            '<br><br><h2>5º Lugar- Rap do Maito Gai (Naruto) - O NINJA MAIS FORTE | NERD HITS</h2>',
+            '<br><br><h2>4º Lugar- Rap dos Coringas - CIRCO DOS HORRORES | NERD HITS</h2>',
+            '<br><br><h2>3º Lugar- Rap do Itachi (Naruto) - ESSA DOR QUE CAUSEI... | NERD HITS</h2>',
+            '<br><br><h2>2º Lugar- Rap dos Hokages (Naruto) - A VONTADE DO FOGO | NERD HITS</h2>',
+            '<br><br><h2>1º Lugar- Rap da Akatsuki (Naruto) - OS NINJAS MAIS PROCURADOS DO MUNDO | NERD HITS</h2>']
+
+        var Videos = ['<iframe width="560" height="315" src="https://www.youtube.com/embed/uqskSRxXTz8?si=N1-YLbFv6aI4ZDCX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/ZHinw8orxM4?si=QgD4h_VPs0Y969PN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/4A-2AmQ7Lvg?si=N8V6lFt-8wAOxLs9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/ObQMysW58NA?si=qbw7Dd89qzR71R85" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/EUMNqA-KM5U?si=Xs4HKrNMYH5k7UaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/i_NDEiPtnp8?si=9pBMLl6yPXdNO6nZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/qMNX3FJh4Z4?si=DGVjkSoww79erc06" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/zs_zpMnwNMs?si=Bqkrxg6dtUNgLpSL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/W8dWDjwkMDw?si=g2ZdvSj8dyhEd54f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/-oYMo8k22Vw?si=FdX9L6BAYs6yP4Hn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>']
+
+        var Descricao = ['O rap foca no personagem Boruto Uzumaki, filho do lendário Naruto Uzumaki, que se tornou Hokage na série de anime e mangá "Naruto". A música aborda a jornada de Boruto, suas experiências, desafios e a pressão de ser filho de um Hokage renomado.',
+            'O Rap do Minato, a letra aborda temas relacionados ao papel de Minato como pai e líder,destacando sua responsabilidade e sacrifícios em prol do bem maior. O conteúdo da música provavelmente explora a história e os momentos marcantes de Minato, oferecendo aos fãs de Naruto uma experiência musicalimersiva e emocional relacionada ao personagem.',
+            'Neste caso, a música é centrada em Meliodas, o protagonista da série de anime e mangá "Nanatsu no Taizai" (Os Sete Pecados Capitais). A letra provavelmente destaca a personalidade, as habilidades e os momentos marcantes de Meliodas, enfatizando seu papel como capitão dos Sete Pecados Capitais.',
+            'Este rap em particular é dedicado a Naruto Uzumaki, o protagonista da série de anime e mangá "Naruto" e "Naruto Shippuden". A letra da música provavelmente destaca a jornada de Naruto desde seu início como um ninja menosprezado até se tornar o Sétimo Hokage da Vila da Folha. É possível que a música explore temas como determinação, superação de desafios e a evolução do personagem ao longo da série. Além disso, pode mencionar os momentos mais icônicos de Naruto e seu papel como líder da vila.',
+            'O rap do Zoro ira contar sobre ele, é o espadachim da tripulação dos Chapéu de Palha e almeja se tornar o maior espadachim do mundo. Zoro é conhecido por sua habilidade excepcional com três espadas simultaneamente, um estilo chamado "Santoryu". Ao longo da história, Zoro demonstra uma devoção incrível aos seus companheiros de tripulação e ao seu capitão, Monkey D. Luffy. Sua personalidade é marcada por uma determinação feroz e um código de honra rígido.',
+            'Might Guy é um poderoso ninja e mestre em taijutsu (técnica de luta corpo a corpo) na Vila da Folha. Guy é conhecido por seu estilo excêntrico e energético, sempre vestindo um traje verde vibrante.Uma de suas habilidades mais notáveis é a abertura dos "Oito Portões Internos", uma técnica arriscada que concede um aumento massivo de poder, mas ao custo de danos físicos significativos.',
+            'O Coringa é um icônico vilão dos quadrinhos da DC Comics, conhecido por ser o arqui-inimigo do Batman. Há várias versões do Coringa ao longo dos anos, cada uma com sua interpretação única do personagem. Ele é frequentemente retratado como um psicopata caótico, mestre em manipulação e planejamento de crimes, com uma fascinação perturbadora pelo caos.',
+            'Itachi Uchiha ele é um dos personagens mais complexos e intrigantes da série. Itachi é inicialmente apresentado como um vilão, mas ao longo da história, revela-se que suas ações foram motivadas por um profundo senso de dever para proteger a Vila da Folha.Itachi é conhecido por seu excepcional talento como ninja e por possuir o Sharingan, uma técnica ocular poderosa. Sua história é marcada por sacrifícios pessoais e dilemas éticos, tornando-o um dos personagens mais cativantes e trágicos de Naruto.',
+            'Em termos gerais, os Hokages são os líderes da Vila da Folha na série de anime e mangá Naruto, eles são ninjas extremamente poderosos e respeitados, responsáveis por proteger e liderar a vila. A expressão "A VONTADE DO FOGO" refere-se a uma filosofia central na cultura da Vila da Folha, que representa a determinação e o espírito de proteger a paz e a unidade da vila a qualquer custo.',
+            'A Akatsuki é uma organização criminosa no anime e mangá Naruto, composta por alguns dos ninjas mais poderosos e notórios do mundo, a Akatsuki é conhecida por seus objetivos ambiciosos e métodos extremos. Cada membro da Akatsuki é um ex-ninja de sua aldeia natal, e eles são identificados por seus mantos longos e nuvens vermelhas.']
+
+        for (var Contagem = 0; Contagem < Videos.length; Contagem += 1) {
+            Texto.innerHTML += `${Titulos[Contagem]}<div class="videoDescricao"><span>${Videos[Contagem]}</span><span>${Descricao[Contagem]}</span>`
+        }
+    </script>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tauz</title>
+    <link rel="stylesheet" href="./CSS/AniRap.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">Noticias Geek</h1>
+            <ul class="navbar">
+                <li class="Geek_bar">
+                    <a href="#">Inicial</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="index.html">Canais</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+
+        <div class="All">
+
+            <div class="Capa">
+
+                <a href="https://www.youtube.com/@Tauz">
+                    <img class="foto" src="./Assents/Imgs/Tauz.jpg"></a>
+
+                <div class="Descricao">
+                    <span>O canal Tauz é conhecido por produzir conteúdo relacionado a música, especialmente rap e
+                        hip-hop. O
+                        canal
+                        ganhou popularidade por suas musicas especiais de inscritos que atigiram milhares de
+                        visualizações,
+                        muitas vezes
+                        com letras relacionadas a jogos, animes, séries e cultura geek em geral.</span>
+                </div>
+
+            </div>
+            <div class="Top">
+
+                <div class="Descricao">
+
+                    <span id="Texto"></span>
+
+                </div>
+                <main>
+
+                    <script>
+
+                        var Titulos = [
+                            '<h2>10º Lugar - Rap do Itachi (Naruto) | Tauz RapTributo 18</h2>',
+                            '<br><br><h2>9º Lugar - Rap do Goku (Dragon Ball Z) | Tauz RapTributo 02</h2>',
+                            '<br><br><h2>8º Lugar - Rap do Jiraiya (Naruto) | Tauz RapTributo 48</h2>',
+                            '<br><br><h2>7º Lugar - Rap do Assassin s Creed | Tauz RapGame 19</h2>',
+                            '<br><br><h2>6º Lugar - Rap do Kakashi (Naruto) | Tauz RapTributo 09</h2>',
+                            '<br><br><h2>5º Lugar - Rap do Deadpool | Tauz RapTributo 15</h2>',
+                            '<br><br><h2>4º Lugar - Rap do Ban (Nanatsu no Taizai) | Tauz RapTributo 50</h2>',
+                            '<br><br><h2>3º Lugar - Rap do Naruto | Tauz RapTributo 05</h2>',
+                            '<br><br><h2>2º Lugar - Rap do Sasuke Pt II (Naruto) | Tauz RapTributo 19</h2>',
+                            '<br><br><h2>1º Lugar - Rap do Minecraft | Tauz RapGame 06</h2>']
+
+                        var Videos = [
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/9hI3iWRWABA?si=YCWlo6bkB0bSMSYz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/FCm88wOgw7s?si=I-tR4ph-Grmx9GbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/StPJhWmfzjU?si=nwMwDHZ5UbsvW5_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/CwKz7j24LPg?si=QBLqb_sYRpPxGCG7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/5WUF6-ikBlM?si=dfp_gXLZAbe-HDtx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/AGop4LgMQ0s?si=AI1DwYoTCLV6sU4d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/L1BK286YeP4?si=2s84eyY_YLPEYYTp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/HG_IL-eDrjo?si=vvhsWcS7nt5ZFLk_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/z9buv3U1l9U?si=NWzrrscvrlTSHKks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/LVMHYzVS9Y4?si=gPRUyGcnxttnu_ft" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+
+
+                               ]
+
+                        var Descricao = [
+                            'Itachi é inicialmente apresentado como um dos antagonistas principais na série, membro da organização criminosa Akatsuki. Ele é conhecido por sua habilidade excepcional em combate e por ser usuário do Sharingan, uma técnica ocular poderosa. Ao longo da narrativa, a verdadeira história de Itachi é revelada. Ele é retratado como um ninja altamente leal à Vila da Folha e a seu irmão mais novo, Sasuke Uchiha. Itachi foi forçado a tomar decisões difíceis no passado, incluindo o massacre de seu próprio clã.',
+                            'Nascido como um Saiyajin, uma raça alienígena guerreira, Goku foi enviado à Terra ainda bebê com a missão de conquistá-la. No entanto, devido a um acidente, ele perdeu a memória de sua missão original. Goku é reconhecido por suas formidáveis transformações, sendo a mais famosa a forma de Super Saiyajin. Sua busca por poder o levou a enfrentar inúmeros inimigos poderosos, como Freeza, Cell e Majin Buu, resultando em batalhas épicas e momentos memoráveis.',
+                            'Jiraiya é inicialmente apresentado como um dos Três Grandes Ninjas de Konohagakure e mentor de Naruto Uzumaki. Ele é um especialista em ninjutsu e é conhecido por sua habilidade em invocar sapos gigantes para auxiliá-lo em batalha. Além disso, Jiraiya é um autor de sucesso, escrevendo uma série de livros populares chamada "Paraíso Make-Out." Ao longo da narrativa, Jiraiya desempenha um papel crucial no desenvolvimento de Naruto como um ninja e como pessoa. ',
+                            'A trama central de "Assassin s Creed" envolve uma guerra ancestral entre duas facções secretas: os Assassinos e os Templários. Os Assassinos buscam a liberdade e a autonomia, enquanto os Templários buscam controle e ordem. A luta entre essas facções se desenrola em diferentes períodos históricos. Cada jogo apresenta um novo protagonista, geralmente um membro dos Assassinos, que assume a missão de combater os Templários e explorar sua linhagem genética.',
+                            'Conhecido por sua habilidade excepcional em combate, Kakashi ganha a alcunha de "Ninja Copiador" devido à sua capacidade de copiar e utilizar as técnicas de seus oponentes, especialmente após obter o Sharingan. Seu domínio do Chidori e outras técnicas o torna um dos ninjas mais respeitados da Vila da Folha. Ao longo da série, Kakashi desempenha um papel vital na formação de seus alunos. Ele é mentor de Naruto, Sasuke e Sakura, contribuindo para o crescimento deles como ninjas e indivíduos',
+                            'Seu verdadeiro nome é Wade Wilson, e sua história começa como um mercenário com habilidades de combate extraordinárias. No entanto, sua vida toma um rumo inesperado quando é diagnosticado com câncer terminal. Em busca de uma cura, Wade voluntaria-se para o programa governamental "Weapon X", que concede a ele habilidades regenerativas incríveis. O processo, no entanto, desfigura seu corpo, mas lhe dá uma imortalidade peculiar. Deadpool é único não apenas por suas habilidades.',
+                            'Originalmente um criminoso imortal, Ban obteve sua imortalidade ao beber da Fonte da Juventude. No entanto, o motivo por trás dessa busca era ressuscitar Elaine, o amor de sua vida, que foi brutalmente assassinada. Essa tragédia molda profundamente a personalidade e motivações de Ban ao longo da narrativa. Sua imortalidade é uma característica distintiva, tornando-o praticamente indestrutível. Sua habilidade, "Jigumo," permite a manipulação da força física.',
+                            'Inicialmente, Naruto é marginalizado devido à sua condição de ser o hospedeiro da Besta com Cauda, Kurama, mas sua determinação em superar esse estigma e ganhar respeito torna-se o cerne da narrativa. Ao longo da história, Naruto é parte do Time 7, liderado por Kakashi Hatake e composto por Sasuke Uchiha e Sakura Haruno. A dinâmica entre esses personagens e as experiências que compartilham formam a base para o crescimento e desenvolvimento de cada um.',
+                            'Originário do prestigiado Clã Uchiha, ele testemunha o massacre de sua família por seu irmão mais velho, Itachi, desencadeando um profundo trauma e uma busca por vingança. Ao longo da série, Sasuke embarca em uma jornada tumultuada em busca de poder. Inicialmente parte do Time 7 com Naruto, Sakura e Kakashi, ele se torna insatisfeito com seu progresso e busca treinamento com Orochimaru, um passo que o leva a caminhos mais obscuros.',
+                            'O Modo Sobrevivência desafia os jogadores a coletar recursos, enfrentar inimigos e gerenciar sua saúde em um ambiente dinâmico que muda de dia para noite. O Modo Criativo, por outro lado, proporciona aos jogadores recursos ilimitados para construir e experimentar sem as pressões da sobrevivência. O núcleo da jogabilidade envolve a coleta de recursos naturais, como madeira e minérios, para criar ferramentas, armas e estruturas. A construção é uma parte fundamental do jogo.'
+                                 ]
+
+                        for (var Contagem = 0; Contagem < Videos.length; Contagem += 1) {
+                            Texto.innerHTML += `${Titulos[Contagem]}<div class="videoDescricao"><span>${Videos[Contagem]}</span><span>${Descricao[Contagem]}</span>`
+                        }
+                    </script>

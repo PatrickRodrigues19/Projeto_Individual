@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neko</title>
+    <link rel="stylesheet" href="./CSS/AniRap.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">Noticias Geek</h1>
+            <ul class="navbar">
+                <li class="Geek_bar">
+                    <a href="#">Inicial</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="index.html">Canais</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+
+        <div class="All">
+
+            <div class="Capa">
+
+                <a href="https://www.youtube.com/@euN3ko">
+                    <img class="foto" src="./Assents/Imgs/Neko.jpg"></a>
+
+                <div class="Descricao">
+                    <span>O canal Neko é conhecido por produzir conteúdo relacionado a música, especialmente rap e
+                        hip-hop. O
+                        canal
+                        ganhou popularidade por suas musicas especiais de inscritos que atigiram milhares de
+                        visualizações,
+                        muitas vezes
+                        com letras relacionadas a jogos, animes, séries e cultura geek em geral.</span>
+                </div>
+
+            </div>
+            <div class="Top">
+
+                <div class="Descricao">
+
+                    <span id="Texto"></span>
+
+                </div>
+                <main>
+
+                    <script>
+
+                        var Titulos = [
+                            '<h2>10º Lugar - Vila de Sangue | Hantengu VS Tanjiro, Genya e Mitsuri</h2>',
+                            '<br><br><h2>9º Lugar - Cem Feras | Kaidou (One Piece) | Neko</h2>',
+                            '<br><br><h2>8º Lugar - Desculpa Dororo | Hyakkimaru (Dororo) | Neko</h2>',
+                            '<br><br><h2>7º Lugar - Demônio das Chamas | Yamamoto Genryūsai (Bleach) | Neko</h2>',
+                            '<br><br><h2>6º Lugar - Pétalas de Sakura | Byakuya Kuchiki (Bleach) | Neko</h2>',
+                            '<br><br><h2>5º Lugar - Za Warudo | Dio Brando (JoJos Bizarre Adventure) | Neko</h2>',
+                            '<br><br><h2>4º Lugar - Paraíso | Enrico Pucci (Jojos Bizarre Adventure) | Neko</h2>',
+                            '<br><br><h2>3º Lugar - Espada Número 4 | Ulquiorra Cifer (Bleach) | Neko</h2>',
+                            '<br><br><h2>2º Lugar - Como Uma Cobra | Gin Ichimaru (Bleach) | Neko</h2>',
+                            '<br><br><h2>1º Lugar - Vingança Contra o Tempo | Takemichi vs Mikey (Tokyo Revengers)</h2>']
+
+                        var Videos = [
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/FFTc2WlAuRU?si=xXdo2m1a5CKAbmr-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/YJ6DFW_EFQM?si=lky7RDH34oKKIsE3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/LZYIJCbuFFk?si=uWfZ53Ns-v9Ti8yg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/LSZBwNeQd9w?si=zZBYZAnCp7wsT215" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/iINC6SAfQS8?si=Md2u2z2zGH1cOQDf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/bCDD2_NirKg?si=Sk314So_Z29DM-fJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/2SUPeQWAOX8?si=JsgXoGuQ-7xLtxyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/t6OYOdCcLz0?si=16J2kFUK0sxUxTLy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/g3g1J9MbzKc?si=5BgIdAhNKyhS5U3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/XJV4vFjrFtI?si=-f0kss11ZBOHfe_y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+                        ]
+
+                        var Descricao = [
+                            'Hantengu é um demônio apresentado na história, pertencente à lua inferior Seis, que são demônios poderosos. Ele possui a capacidade de dividir sua personalidade em diferentes formas, cada uma representando uma emoção diferente. Tanjiro é um jovem corajoso que se torna um Caçador de Demônios após sua família ser massacrada por demônios. Genya é um Caçador de Demônios e o irmão mais novo de Sanemi Shinazugawa, o Pilar do Vento. Mitsuri é uma Caçadora de Demônios e a Pilar do Amor.',
+                            'Conhecido como "Kaido, o das Bestas", ele lidera os Piratas das Feras e é um dos Yonkou, os quatro piratas mais poderosos do mundo. Sua presença é envolta em mistério, e sua reputação é construída em torno de sua força inigualável e aparente indestrutibilidade. Sua ambição é singular e colossal: Kaido busca criar um mundo onde apenas os mais fortes sobrevivem, refletindo sua incessante busca por desafios extremos e perigosos. Sua tripulação, os Piratas das Feras, é composta por usuários de Akuma no Mi da classe Zoan.',
+                            ' Nascido durante o tumultuado Período Sengoku, sua história começa com um terrível sacrifício. Seu pai, um senhor feudal, faz um pacto com demônios para garantir o domínio, resultando no sacrifício dos membros e órgãos de Hyakkimaru quando ainda era um bebê. Sobrevivendo ao ritual, Hyakkimaru cresce empenhado em recuperar o que lhe foi tirado. Dotado de membros e órgãos artificiais com armas embutidas, ele embarca em uma jornada de vingança contra os demônios que o despojaram de sua humanidade.',
+                            'Ele é o Capitão da 1ª Divisão e o Comandante Geral de todas as 13 Divisões da Sociedade das Almas. Yamamoto, muitas vezes chamado de Capitão-Comandante, é uma figura idosa e extremamente poderosa na Sociedade das Almas. Ele é conhecido por sua presença imponente, barba longa e por ser um dos Shinigamis mais respeitados e temidos. Como líder da Sociedade das Almas, Yamamoto é responsável por manter a ordem e proteger os vivos e os mortos do Mundo Humano e do Mundo Espiritual.',
+                            'Ele é o Capitão da 6ª Divisão na Sociedade das Almas, uma das treze divisões lideradas pelos Shinigamis. Byakuya é introduzido como um personagem calmo, distante e extremamente respeitado na Sociedade das Almas. Ele é conhecido por sua habilidade excepcional em Zanjutsu (a arte da espada) e pelo uso de técnicas de Kido (magia espiritual). Seu Zanpakutō, Senbonzakura, é um dos mais distintos e poderosos da série. Inicialmente, Byakuya é retratado como uma figura austera e leal à lei e às tradições da Sociedade.',
+                            'O conflito entre Dio e Jonathan Joestar é o cerne do arco inicial, marcado por traições, tragédias e uma rivalidade que transcende gerações. Dio, agora um vampiro imortal, utiliza habilidades sobrenaturais, como controle mental e força sobre-humana, para perseguir seus objetivos. A técnica "Muda Muda Muda" e a imagem de Dio proferindo essas palavras enquanto desfere socos rápidos e poderosos tornam-se emblemáticas. Seu legado estende-se além de sua aparente derrota, influenciando eventos e personagens.',
+                            'Inicialmente apresentado como o capelão de uma prisão, sua história revela uma ligação profunda com Dio Brando, o antagonista de partes anteriores da série.Motivado por um desejo de realizar o plano "Made in Heaven", Pucci busca acelerar o tempo cósmico para alcançar um novo estágio na evolução da humanidade. Seu Stand, "Whitesnake", possui a capacidade única de manipular memórias e roubar Stands, evoluindo para formas mais poderosas ao longo da história.',
+                            'A personalidade de Ulquiorra é notavelmente fria e pragmática, expressando indiferença em relação às emoções humanas. No entanto, sua história se desdobra quando ele captura Orihime Inoue, e há um desenvolvimento surpreendente em sua compreensão limitada das emoções enquanto interage com ela. Sua Zanpakutō, Murciélago, pode ser liberado na forma de Resurrección, transformando-o em uma criatura alada com chifres. Essa forma aumenta drasticamente suas habilidades de combate.',
+                            'Como Capitão da 3ª Divisão na Sociedade das Almas, ele inicialmente se apresenta como um líder leal e respeitado, com uma aparência tranquila e um sorriso constante. No entanto, sua personalidade enigmática esconde verdadeiras intenções que só são reveladas mais tarde na trama. A verdadeira lealdade de Gin é posta em questão quando se descobre que ele está conspirando com Sōsuke Aizen, o principal antagonista da série. Sua conexão com Rukia Kuchiki e seu envolvimento nas tramas obscuras do Hueco Mundo.',
+                            'Esse confronto é mais do que apenas uma luta física; é um momento carregado de tensão emocional, onde Takemichi busca não apenas mudar o rumo dos eventos futuros, mas também entender Mikey em um nível pessoal. A narrativa mergulha em reflexões sobre escolhas de vida, consequências e a possibilidade de redenção. Durante o confronto, os personagens enfrentam uma profunda reflexão sobre suas próprias ações e o impacto delas.'
+                        ]
+
+                        for (var Contagem = 0; Contagem < Videos.length; Contagem += 1) {
+                            Texto.innerHTML += `${Titulos[Contagem]}<div class="videoDescricao"><span>${Videos[Contagem]}</span><span>${Descricao[Contagem]}</span>`
+                        }
+                    </script>
