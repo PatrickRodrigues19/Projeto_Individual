@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link rel="stylesheet" href="./css/7mz.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">Noticias Geek</h1>
+            <ul class="navbar">
+                <li class="Geek_bar">
+                    <a href="#">Inicial</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="index.html">Canais</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="Analytics.html">Dashboard</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="Top">
+
+        <div class="Descricao">
+
+            <span id="Texto"></span>
+
+        </div>
+        <main>
+
+            <script>
+
+                var Titulos = [
+                    '<h2>21/11/2023 - Katakuri (One Piece) - Doce Visão Do Futuro | M4rkim</h2>',
+                    '<br><br><h2>20/11/2023 - ♪ Kaneki e Rize | Escolhas | AniRap feat. @Heeyisis</h2>',
+                    '<br><br><h2>20/11/2023 - Tipo Kenjaku 🧠 (Jujutsu Kaisen) Eu não sou Geto | Prod. MK | MHRAP</h2>',
+                    '<br><br><h2>19/11/2023 - Momento Brasileiro (Mari Capoeirista) - Rodrigo Zin</h2>',
+                    '<br><br><h2>19/11/2023 - Barba Branca - Lenda dos Mares Feat: @playertauz (One Piece) | VGBeats</h2>',
+                    '<br><br><h2>18/11/2023 - Hajime Kashimo Trap ⚡⚡ (Jujutsu Kaisen) | Matador de Reis - Pejota</h2>',
+                    '<br><br><h2>18/11/2023 - WLO - Eletrificar [ Jujutsu Kaisen / Kashimo Hajime </h2>',
+                    '<br><br><h2>12/11/2023 - Tipo Suguru Geto ☠️ (Jujutsu Kaisen) UM NOVO COMEÇO | Prod. Sid | MHRAP</h2>',
+                    '<br><br><h2>12/11/2023 - Chihiro Rokuhira (Kagurabachi) - Espadas, Magias & Vingança | M4rkim</h2>',
+                    '<br><br><h2>10/11/2023 - Hakari Kinji Trap 💸💸 (Jujutsu Kaisen) | O Dono da Blaze | Pejota</h2>',
+                    '<br><br><h2>06/11/2023 - Dan - Tudo Falso (Kenjaku) Feat. Yondax</h2>',
+                    '<br><br><h2>05/11/2023 - Apolo (Shuumatsu no Valkyrie) - Sol | M4rkim</h2>',
+                    '<br><br><h2>05/11/2023 - ♪ Hajime Kashimo | Eletricidade | AniRap</h2>',
+                    '<br><br><h2>10/11/2023 - Hakari Kinji Trap 💸💸 (Jujutsu Kaisen) | O Dono da Blaze | Pejota</h2>',
+                    '<br><br><h2>10/11/2023 - Hakari Kinji Trap 💸💸 (Jujutsu Kaisen) | O Dono da Blaze | Pejota</h2>'
+                ]
+
+                var Videos = [
+                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/YYOzEPf8AAM?si=cja2py__9D1xFJTT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/zIhvdpzepbM?si=fs7I3HbpsN4i0tX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/RdeBs0Lb8Kw?si=unBoEvUs4jUO2OOa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/VZxNxYkXx8g?si=P5eXyeyf9z9t093y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/E9iJ5L-Lqos?si=9OrhQTTvHZxq6lOG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/E4dLKhciVCg?si=bdpvM7Id4IyK3hYB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/CzTuuISldCQ?si=GFjCCMcF_OOYMU5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/ndXRzPX8ETc?si=CgDiWgIr-in80Aiz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/yFpNY-2lpRQ?si=zffqlMtXhp-AtJtJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/DoCG-SjfxC4?si=ujrEAw_ydD0dQxWN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/H-FUjh3lrsk?si=EauSca-Vfl6F1V-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/UDgM5NORRdk?si=0QDMO1w8h7D-QgaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/2M1FGPorLL8?si=v7rxZ0LU_DtENAfT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+                ]
+
+                var Descricao = [
+                    'A personalidade de Katakuri é marcada por um comprometimento feroz com suas responsabilidades como comandante da Big Mom Pirates. Ele é retratado como um indivíduo extremamente focado, trabalhador e perfeccionista. Apesar de sua imagem temível, ele demonstra um lado compassivo e preocupado com o bem-estar de seus irmãos e da família. Katakuri é um usuário habilidoso da Haki, uma técnica de combate poderosa em "One Piece". Sua fruta do diabo, a "Mochi Mochi no Mi", concede-lhe a habilidade de criar, controlar e se transformar em mochi, proporcionando uma variedade de técnicas ofensivas e defensivas.',
+                    'Kaneki, após o incidente, torna-se um híbrido entre humano e ghoul, enfrentando não apenas os desafios físicos de sua nova existência, mas também as complexidades emocionais e morais. Sua jornada é marcada por autodescoberta e confrontos com a sociedade ghoul. Rize, por sua vez, é conhecida por sua beleza e apetite voraz por carne humana. Seu encontro com Kaneki desencadeia uma série de eventos que moldam não apenas o destino dele, mas também revelam detalhes sobre o passado misterioso de Rize.',
+                    ' Sua verdadeira identidade e motivações são inicialmente mantidas em segredo, criando uma atmosfera de mistério em torno dele. Ele desempenha um papel crucial na história, especialmente em eventos relacionados à maldição de Sukuna, uma entidade maligna central no enredo. As ações de Kenjaku têm impacto direto nos personagens principais e nas dinâmicas entre jujutsu sorcerers e maldições no mundo de "Jujutsu Kaisen". Suas habilidades como feiticeiro são notáveis, conferindo-lhe uma posição como um antagonista formidável na narrativa.',
+                    'A Mari Capoeirista é um visual para a heroína Mayene, usando a jogabilidade da lutadora marcial como base, mas trazendo sua própria história, personalidade, dublagem e tema musical. O estilo de luta de Mari mistura dança e golpes que surpreendem os oponentes, remetendo à capoeira. O Honor of Kings vem investindo no Brasil e criando continuamente conteúdos e experiências para surpreender e engajar o público brasileiro, com o time de desenvolvimento sempre aberto a sugestões para melhorar e entender mais profundamente a cultura brasileira.',
+                    'Ele era o poderoso capitão da Tripulação Barba Branca, uma das quatro tripulações mais temidas dos mares. Sua reputação como o "Homem Mais Forte do Mundo" destacava-se não apenas por sua imensa força física, mas também por sua natureza compassiva e senso de justiça. A aparência marcante de Barba Branca, com uma longa barba branca que cobre parte de seu rosto, reflete sua presença imponente. Sua tripulação era considerada sua família, e ele demonstrava uma lealdade profunda por seus membros, tratando-os como filhos.',
+                    'Ele é um feiticeirode 400 anos atrás, atualmente habitando o corpo de alguém que Kenjaku preparou como recipiente, e serviu como jogador no Jogo de Culling, buscando encontrar e consequentemente lutar contra Sukuna. 400 anos atrás, Hajime era um homem idoso com olhos cor de ciano e linhas curtas em zigue-zague abaixo deles. Ele tinha sobrancelhas grossas e longos cabelos ciano amarrados em um estilo desgrenhado. A maior parte era mantida amarrada atrás da cabeça com uma única faixa e chegava logo além do pescoço. Ele também tinha parte do cabelo repartido e amarrado em dois coques nos lados direito e esquerdo da cabeça.',
+                    'Ele é um feiticeirode 400 anos atrás, atualmente habitando o corpo de alguém que Kenjaku preparou como recipiente, e serviu como jogador no Jogo de Culling, buscando encontrar e consequentemente lutar contra Sukuna. 400 anos atrás, Hajime era um homem idoso com olhos cor de ciano e linhas curtas em zigue-zague abaixo deles. Ele tinha sobrancelhas grossas e longos cabelos ciano amarrados em um estilo desgrenhado. A maior parte era mantida amarrada atrás da cabeça com uma única faixa e chegava logo além do pescoço. Ele também tinha parte do cabelo repartido e amarrado em dois coques nos lados direito e esquerdo da cabeça.',
+                    'Ele é um feiticeiro habilidoso e ex-aluno da Tokyo Metropolitan Jujutsu Technical High School, compartilhando uma amizade anterior com Satoru Gojo, um dos protagonistas. Ao longo da história, Geto passa por uma transformação significativa em sua perspectiva sobre o mundo dos feiticeiros e maldições. Ele se torna um defensor radical da eliminação da barreira entre humanos e maldições, buscando uma mudança drástica na ordem estabelecida. O personagem desempenha um papel crucial em planos ambiciosos, manipulando maldições e feiticeiros para alcançar seus objetivos. Seus conflitos com os protagonistas, incluindo Itadori Yuji e Satoru Gojo.',
+                    'Após a morte de seu pai, Chihiro dedica sua vida a recuperar as lâminas encantadas roubadas de seu pai e a caçar os Hishaku , um grupo de feiticeiros responsáveis ​​pela morte de seu pai. Chihiro possui uma personalidade diligente e curiosa, profundamente comprometido em aprender a arte da forjaria sob a orientação de seu renomado pai, Kunishige. Ele lida com suas responsabilidades de maneira eficaz, desde cuidar de peixinhos dourados até outras tarefas que lhe são atribuídas. Chihiro é movido pela ambição, aspirando seguir os passos do pai como ferreiro, plenamente consciente do peso moral e emociona.',
+                    'Kinji é um tipo de pessoa muito egocêntrica que pouco se importa com as regras e regulamentos do Jujutsu High. Yuta Okkotsu o descreve como temperamental e, aparentemente, todos os outros alunos que têm a mesma idade de Kinji pensam nele como um imprestável. Kinji é um indivíduo que gosta de ver as pessoas se perderem em suas paixões. Ele descreve isso como a “febre” das pessoas escaldante. Kinji é inteligente e usa sua própria febre para manipular os outros. Ele acredita que as pessoas estão desesperadas para mudar de vida e que uma forma fácil de controlar a febre é através do jogo.',
+                    'Sua verdadeira identidade e motivações são inicialmente mantidas em segredo, criando uma atmosfera de mistério em torno dele. Ele desempenha um papel crucial na história, especialmente em eventos relacionados à maldição de Sukuna, uma entidade maligna central no enredo. As ações de Kenjaku têm impacto direto nos personagens principais e nas dinâmicas entre jujutsu sorcerers e maldições no mundo de "Jujutsu Kaisen". Suas habilidades como feiticeiro são notáveis, conferindo-lhe uma posição como um antagonista formidável na narrativa.',
+                    'Apolo aparenta ser um indivíduo extremamente narcisista, que se preocupa muito com a beleza, quando se trata de si mesmo e até dos outros. Quando ele ouviu notícias da morte de outros deuses gregos no Ragnarok, sua primeira reação não foi lamentar por eles, mas sim, desejar poder estar lá para ver suas mortes, pois eles deveriam estar lindos quando morreram. Além de ser narcisista, Apolo despreza qualquer um que não se encaixe em seus próprios padrões de beleza. Isto é especialmente no caso dos Humanos , como no início da nona rodada: quando Leônidas saltou antes que Heimdall pudesse terminar de dizer "Lute!".',
+                    'Ele é um feiticeirode 400 anos atrás, atualmente habitando o corpo de alguém que Kenjaku preparou como recipiente, e serviu como jogador no Jogo de Culling, buscando encontrar e consequentemente lutar contra Sukuna. 400 anos atrás, Hajime era um homem idoso com olhos cor de ciano e linhas curtas em zigue-zague abaixo deles. Ele tinha sobrancelhas grossas e longos cabelos ciano amarrados em um estilo desgrenhado. A maior parte era mantida amarrada atrás da cabeça com uma única faixa e chegava logo além do pescoço. Ele também tinha parte do cabelo repartido e amarrado em dois coques nos lados direito e esquerdo da cabeça.'
+                ]
+                for (var Contagem = 0; Contagem < Videos.length; Contagem += 1) {
+                    Texto.innerHTML += `${Titulos[Contagem]}<div class="videoDescricao"><span>${Videos[Contagem]}</span><span>${Descricao[Contagem]}</span>`
+                }
+            </script>

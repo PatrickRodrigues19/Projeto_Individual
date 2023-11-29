@@ -95,7 +95,7 @@ body {
 span {
   font-family: "Classica";
   font-size: 20px;
-  width: 500px;
+  width: 600px;
 }
 
 .Thubnail {
@@ -132,4 +132,13 @@ h2 {
 .videoDescricao span {
   padding: 50px;
   font-size: 20px;
+}
+
+.header ul {
+  width: 700px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  font-size: medium;
 }

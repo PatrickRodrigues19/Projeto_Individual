@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉoDan</title>
+    <link rel="stylesheet" href="./css/Style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">Noticias Geek</h1>
+            <ul class="navbar">
+                <li class="Geek_bar">
+                    <a href="#">Inicial</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="index.html">Canais</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+
+        <div class="All">
+
+            <div class="Capa">
+
+                <a href="https://www.youtube.com/@EoDanOficial">
+                    <img class="foto" src="./Assents/Imgs/ÉoDan.jpg"></a>
+
+                <div class="Descricao">
+                    <span>O canal ÉoDan é conhecido por produzir conteúdo relacionado a música, especialmente rap e
+                        hip-hop. O
+                        canal
+                        ganhou popularidade por suas musicas especiais de inscritos que atigiram milhares de
+                        visualizações,
+                        muitas vezes
+                        com letras relacionadas a jogos, animes, séries e cultura geek em geral.</span>
+                </div>
+
+            </div>
+            <div class="Top">
+
+                <div class="Descricao">
+
+                    <span id="Texto"></span>
+
+                </div>
+                <main>
+
+                    <script>
+
+                        var Titulos = [
+                            '<h2>10º Lugar - Dan - Dia de Sorte (Prod. Chusk)</h2>',
+                            '<br><br><h2>9º Lugar - Dan - Pantera (Aomine)</h2>',
+                            '<br><br><h2>8º Lugar - Dan - DMT (Eren Yeager)</h2>',
+                            '<br><br><h2>7º Lugar - Dan - Muralha (Murasakibara)</h2>',
+                            '<br><br><h2>6º Lugar - Dan - Bandana da Oakley (Satoru Gojo)</h2>',
+                            '<br><br><h2>5º Lugar - Dan - Bala (Mikey & Draken) (ft. Micael)</h2>',
+                            '<br><br><h2>4º Lugar - Dan - Sei Lá</h2>',
+                            '<br><br><h2>3º Lugar - Dan - Venenosa (Obanai)</h2>',
+                            '<br><br><h2>2º Lugar - Minha Tripulação</h2>',
+                            '<br><br><h2>1º Lugar - Dan - Tropa da Big Mom (ft.@SecondTime & @PeJota10)</h2>']
+
+                        var Videos = [
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/MYP_xhFHM0g?si=FiX28c30h3V8HYoF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/lydPbiq7c7o?si=_yEthaXQrxutFopI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/s_0A7_FFIAA?si=czwHBBkY1cUp-XCR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/n1WpRDR_qCk?si=IL6NiMl5Dkk4pbA6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/B95Cn1U1OUQ?si=t89HUeppcsJYMDDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/yqun0WZJNbA?si=P3SgyQ9WRS0i-2MD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/UWNTmUwNWhI?si=CHpQQeM9ufVOZrFW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/5zQ9j1tWyhk?si=0joutyrR4IaGN-cO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/LMO2VDNVb6U?si=SSih1zf4zc6cAxhl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                            '<iframe width="560" height="315" src="https://www.youtube.com/embed/Jv8X6oQkC-M?si=vAOfKghPNbxk4_mM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+                        ]
+                        var Descricao = [
+                            '"Sono Bisque Doll wa Koi wo Suru" é uma série de mangá japonesa escrita e ilustrada por Shinichi Fukuda. A história segue Wakana Gojou, um estudante do ensino médio que decide entrar para o clube de teatro para superar sua timidez. No entanto, ele acaba sendo escolhido para o papel principal em uma peça e se vê enfrentando o desafio de interpretar uma personagem feminina. Para aprimorar suas habilidades, Wakana decide se vestir como uma boneca, buscando a perfeição em sua atuação.',
+                            'Ele é um dos jogadores talentosos da Geração dos Milagres, uma equipe de basquete conhecida por suas habilidades excepcionais. Aomine é caracterizado por sua personalidade arrogante e autoconfiante, alimentada por seu talento natural no esporte. Aomine se destaca por sua incrível habilidade no jogo de basquete, sendo considerado um dos melhores jogadores do país. Sua abordagem casual e desinteressada para o esporte muitas vezes o coloca em conflito com outros personagens.',
+                            'Eren começa como um jovem idealista que sonha em explorar o mundo fora das muralhas e se revolta contra a opressão dos Titãs. No entanto, sua vida toma um rumo dramático quando sua cidade é atacada por Titãs, resultando na perda de sua mãe. Determinado a vingar a morte de sua mãe e erradicar os Titãs, Eren se junta à Divisão de Exploração. Ao longo da série, Eren descobre segredos complexos sobre os Titãs, a história de sua própria família e os eventos que levaram à criação das muralhas.',
+                            'Ele faz parte da Geração dos Milagres, uma equipe de basquete composta por jogadores excepcionalmente talentosos. Murasakibara é conhecido por sua altura impressionante e habilidades únicas no jogo, especialmente sua destreza no bloqueio de arremessos e sua força física dominante. Sua personalidade é muitas vezes descrita como preguiçosa e desinteressada, contrastando com seu notável talento no esporte. Ao longo da série, Murasakibara é desafiado por outros jogadores e equipes.',
+                            'Gojo é reconhecido como um dos feiticeiros mais poderosos e habilidosos da série. Ele é conhecido por sua personalidade descontraída e brincalhona, que muitas vezes mascara sua incrível força e habilidades no combate contra ameaças sobrenaturais, como maldições. Além de ser um mestre em jujutsu, Gojo desempenha um papel crucial na formação e orientação dos protagonistas, especialmente Itadori Yuji, Megumi Fushiguro e Nobara Kugisaki. Ele é conhecido por seu desprezo pelas regras convencionais.',
+                            'Mikey é o líder carismático e calmo da gangue, enquanto Draken é seu braço direito, conhecido pela sua lealdade e força física. Ao longo da trama, a história explora a dinâmica entre esses dois personagens e a complexidade de suas personalidades e relacionamentos. A relação entre Mikey e Draken é central para a trama de "Tokyo Revengers". Eles enfrentam desafios e conflitos internos dentro da gangue, e a história destaca a importância de suas amizades e escolhas em meio a um ambiente perigoso.',
+                            'Asuna Yuuki é uma personagem central no anime e light novel "Sword Art Online". Ela é uma jogadora experiente e habilidosa que, junto com milhares de outros jogadores, fica presa no mundo virtual de Sword Art Online. Escolhendo a classe de espadachim, Asuna destaca-se rapidamente como uma das melhores jogadoras no jogo, ganhando reconhecimento por sua destreza com uma espada. Ao longo da história, Asuna forma uma parceria próxima com Kirito, o protagonista masculino.',
+                            'Obanai Iguro é o Hashira da Serpente da Respiração das Serpentes. Ele é conhecido por seu comportamento frio e reservado, muitas vezes mantendo uma atitude distante em relação aos outros membros da organização. Sua aparência é marcada por um par de óculos e uma cicatriz que atravessa seu rosto. A Respiração das Serpentes é um estilo de combate único que se baseia em técnicas de movimento fluidas e ataques rápidos, imitando os movimentos de uma serpente.',
+                            'A tripulação é formada por membros diversos, cada um com habilidades únicas e um passado intrigante. Roronoa Zoro, o espadachim, Nami, a navegadora talentosa, Usopp, o atirador habilidoso, Sanji, o cozinheiro com habilidades marciais únicas, Tony Tony Chopper, a rena médica com a habilidade de se transformar, Nico Robin, a arqueóloga com um passado misterioso, Franky, o construtor de navios ciborgue, Brook, o esqueleto músico e espadachim, e Jinbe, o timoneiro e mestre em artes marciais.',
+                            'O Bando da Big Mom é uma formidável tripulação de piratas no mundo de "One Piece", liderada pela temida Charlotte Linlin, também conhecida como Big Mom. Big Mom é uma das Yonko, os quatro piratas mais poderosos do mundo, e sua tripulação é uma das mais influentes e formidáveis dos mares. O território principal do bando é a Ilha Whole Cake, que faz parte do arquipélago da Totland. Esta ilha é única, com suas diversas ilhas temáticas de doces e uma população composta por várias raças e espécies.'
+
+
+
+                        ]
+
+                        for (var Contagem = 0; Contagem < Videos.length; Contagem += 1) {
+                            Texto.innerHTML += `${Titulos[Contagem]}<div class="videoDescricao"><span>${Videos[Contagem]}</span><span>${Descricao[Contagem]}</span>`
+                        }
+                    </script>

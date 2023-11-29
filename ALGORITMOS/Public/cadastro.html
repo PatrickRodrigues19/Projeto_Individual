@@ -60,8 +60,28 @@
             SENHA<br>
             <input placeholder="*********" type="password" id="input_senha"><br><br>
 
-            CONFIRME A SENHA<br>
-            <input placeholder="*********" type="password" id="input_confirma_senha"><br><br>
+            <label for="canal">Qual seu canal favorito ?:</label><br>
+
+            <select id="canal">
+                <option value="100">7 minutoz</option>
+                <option value="101">AniRap</option>
+                <option value="102">Basara</option>
+                <option value="103">Chrono</option>
+                <option value="104">Daarui</option>
+                <option value="105">Enygma</option>
+                <option value="106">Henrique Mendonça</option>
+                <option value="107">Kaito</option>
+                <option value="108">M4rkim</option>
+                <option value="109">MHRAP</option>
+                <option value="110">Neko</option>
+                <option value="111">PeJota</option>
+                <option value="112">Rodrigo Zin</option>
+                <option value="113">SecondTime</option>
+                <option value="114">Takeru</option>
+                <option value="115">Tauz</option>
+                <option value="116">VMZ</option>
+                <option value="117">ÉoDan</option>
+            </select><br><br>
 
 
             <button onclick="cadastrar()">Entrar</button></a><br><br>
@@ -86,25 +106,22 @@
         var Nome = input_nome.value
         var Email = input_email.value
         var Senha = input_senha.value
-        var SenhaConfirmada = input_confirma_senha.value
+        var Canal_Preferido = canal.value
 
 
-        // if (
-        //     nomeVar == "" ||
-        //     emailVar == "" ||
-        //     senhaVar == "" ||
-        //     confirmacaoSenhaVar == "" ||
-        //     empresaVar == ""
-        // ) {
-        //     cardErro.style.display = "block";
-        //     mensagem_erro.innerHTML =
-        //         "(Mensagem de erro para todos os campos em branco)";
+        if (
+            Nome == "" ||
+            Email == "" ||
+            Senha == ""
+        ) {
 
-        //     finalizarAguardar();
-        //     return false;
-        // } else {
-        //     setInterval(sumirMensagem, 5000);
-        // }
+            alert('Mensagem de erro para todos os campos em branco')
+
+
+            return false;
+        } else {
+            setInterval(sumirMensagem, 5000);
+        }
 
         // Enviando o valor da nova input
         fetch("/usuarios/cadastrar", {
@@ -117,14 +134,15 @@
                 // Agora vá para o arquivo routes/usuario.js
                 nomeServer: Nome,
                 emailServer: Email,
-                senhaServer: Senha
+                senhaServer: Senha,
+                favoritoServer: Canal_Preferido
             }),
         })
             .then(function (resposta) {
                 console.log("resposta: ", resposta);
 
                 if (resposta.ok) {
-                    
+
                     setTimeout(() => {
                         window.location = "login.html";
                     }, "2000");
@@ -161,6 +179,6 @@
         cardErro.style.display = "none";
     }
 </script>
-</script>
+
 
 </html>
