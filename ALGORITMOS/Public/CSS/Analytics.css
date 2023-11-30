@@ -17,10 +17,6 @@ body {
     background: linear-gradient(gray, whitesmoke, gray, whitesmoke);
 }
 
-.All {
-    padding: 10px;
-}
-
 .titulo {
     font-family: "Next Bravo";
     letter-spacing: 4px;
@@ -69,69 +65,10 @@ body {
     font-weight: 500;
 }
 
-.foto {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-}
-
-.Capa {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    display: flex;
-    border-radius: 5px;
-
-}
-
-.Descricao {
-    padding: 20px;
-    display: flex;
-}
-
 span {
     font-family: "Classica";
     font-size: 20px;
     width: 500px;
-}
-
-.Thubnail {
-    width: 500px;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    display: flex;
-    border-radius: 5px;
-}
-
-.All {
-    width: 80%;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-}
-
-h2 {
-    display: flex;
-    justify-content: center;
-}
-
-#Texto {
-    width: 100%;
-}
-
-.videoDescricao {
-    display: flex;
-}
-
-.videoDescricao span {
-    padding: 50px;
-    font-size: 20px;
 }
 
 .header ul {

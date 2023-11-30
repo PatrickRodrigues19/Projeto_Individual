@@ -34,11 +34,4 @@ Raking INT,
 Titulo VARCHAR(150)
 );
 
--- 1 - N --
-
-
-
-DROP DATABASE NoticiasGeek;
-
-DROP TABLE Video;
 

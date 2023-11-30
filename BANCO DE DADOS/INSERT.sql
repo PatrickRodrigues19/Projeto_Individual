@@ -228,8 +228,53 @@ INSERT INTO Descricao (descricao,fkCanal) VALUES
  (113, 2, 'Style Yoriichi (Kimetsu No Yaiba) | Respiração Do Sol'),
  (113, 1, 'Style Kokushibo | Lua Superior 1 (Demon Slayer)');
  
+ INSERT INTO Video (fkCanal_video, Raking, Titulo) VALUES -- Takeru --
+ (114, 10, 'SOU APENAS UM VILÃO POR DIVERSÃO - Saitama Rap'),
+ (114, 9, 'O VERDADEIRO RAP DO AYANOKOJI (+18) | Takeru'),
+ (114, 8, 'O MAIS BRABO DE KONOHA - Naruto Trap'),
+ (114, 7, 'Rap do Dabi (Boku no Hero) - CHAMAS AZUIS'),
+ (114, 6, 'TENHAM MEDO, PORQUE EU ESTOU AQUI - Midoriya Rap'),
+ (114, 5, 'RAGNAROK - Shuumatsu no Valkyrie'),
+ (114, 4, 'BIJUU DAMA - Naruto Rap'),
+ (114, 3, 'Rap do Naofumi (Tate no Yuusha) - O HERÓI DO ESCUDO'),
+ (114, 2, 'MURYO KUSHO - Gojo (Jujutsu Kaisen) | Takeru'),
+ (114, 1, 'Rap do Sukuna (Jujutsu Kaisen) - O REI DAS MALDIÇÕES');
  
+ INSERT INTO Video (fkCanal_video, Raking, Titulo) VALUES -- Tauz --
+ (115, 10, 'Rap do Itachi (Naruto) | Tauz RapTributo 18'),
+ (115, 9, 'Rap do Goku (Dragon Ball Z) | Tauz RapTributo 02'),
+ (115, 8, 'Rap do Jiraiya (Naruto) | Tauz RapTributo 48'),
+ (115, 7, 'Rap do Assassin s Creed | Tauz RapGame 19'),
+ (115, 6, 'Rap do Kakashi (Naruto) | Tauz RapTributo 09'),
+ (115, 5, 'Rap do Deadpool | Tauz RapTributo 15'),
+ (115, 4, 'Rap do Ban (Nanatsu no Taizai) | Tauz RapTributo 50'),
+ (115, 3, 'Rap do Naruto | Tauz RapTributo 05'),
+ (115, 2, 'Rap do Sasuke Pt II (Naruto) | Tauz RapTributo 19'),
+ (115, 1, 'Rap do Minecraft | Tauz RapGame 06');
  
+ INSERT INTO Video (fkCanal_video, Raking, Titulo) VALUES -- VMZ --
+ (116, 10, 'VMZ - Oppai | Lyric Vídeo'),
+ (116, 9, 'VMZ - Bad Girl 🐰 | Lyric Vídeo | Prod. Jow Santh'),
+ (116, 8, 'VMZ - Eu Sou Zetsu'),
+ (116, 7, 'VMZ - Kawai'),
+ (116, 6, 'VMZ - Among Us | Feat. JKZ e Yuri BL4CK'),
+ (116, 5, '🔴Rap do Bipher "Ópera de Meias" | Versão Acústica | VMZ'),
+ (116, 4, '🔴Rap Ansiedade "Crise Existencial" | Noragami - Violet Evergarden'),
+ (116, 3, 'VMZ - Entre Raios | Feat. Tauz | Lyric Vídeo'),
+ (116, 2, 'VMZ - Sem Ela | Feat. Lucas A.R.T | Prod. Bruno Zanardi'),
+ (116, 1, '🔴Rap Depressão | Charlotte - Angel Beats - Erased');
+ 
+ INSERT INTO Video (fkCanal_video, Raking, Titulo) VALUES -- ÉoDan --
+ (117, 10, 'Dan - Dia de Sorte (Prod. Chusk)'),
+ (117, 9, 'Dan - Pantera (Aomine)'),
+ (117, 8, 'Dan - DMT (Eren Yeager)'),
+ (117, 7, 'Dan - Muralha (Murasakibara)'),
+ (117, 6, 'Dan - Bandana da Oakley (Satoru Gojo)'),
+ (117, 5, 'Dan - Bala (Mikey & Draken) (ft. Micael)'),
+ (117, 4, 'Dan - Sei Lá'),
+ (117, 3, 'Dan - Venenosa (Obanai)'),
+ (117, 2, 'Minha Tripulação'),
+ (117, 1, 'Dan - Tropa da Big Mom (ft.@SecondTime & @PeJota10)');
  
 Select * From Canal;
 
@@ -242,15 +287,11 @@ SELECT * FROM Video;
 SELECT Canal.*, Descricao.descricao FROM Canal
 JOIN Descricao ON idCanal = fkCanal;
 
-
-
 select count(*) from usuario group by fkCanal_Favorito;
 
 select count(*) from usuario group by fkCanal_Favorito;
 
 SELECT MIN(fkCanal_Favorito), MAX(fkCanal_Favorito) FROM Usuario;
-
-
 
 SELECT MIN(contagem_canal), MAX(contagem_canal)
 FROM (
@@ -259,11 +300,6 @@ FROM (
     GROUP BY fkCanal_Favorito
 ) AS contagens;
 
-select Canal.NomaCanal, count(*) as 'Quantidade_de_favoritos' from usuario join Canal
+select Canal.NomeCanal, count(*) as 'Quantidade_de_favoritos' from usuario join Canal
 on Canal.idCanal = Usuario.fkCanal_Favorito
 group by fkCanal_Favorito;
-
-
-
-
-

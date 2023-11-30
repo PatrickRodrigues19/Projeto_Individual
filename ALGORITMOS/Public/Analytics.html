@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7 Minutoz</title>
+    <title>Analytics</title>
     <link rel="stylesheet" href="./css/Analytics.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -16,26 +16,30 @@
             <h1 class="titulo">Noticias Geek</h1>
             <ul class="navbar">
                 <li class="Geek_bar">
-                    <a href="#">Inicial</a>
+                    <a href="index.html">Inicial</a>
                 </li>
                 <li>|</li>
                 <li>
-                    <a href="index.html">Canais</a>
+                    <a href="Canais.html">Canais</a>
                 </li>
                 <li>|</li>
                 <li>
-                    <a href="login.html">Login</a>
+                    <a href="Analytics.html">Dashboard</a>
                 </li>
                 <li>|</li>
                 <li>
-                    <a href="cadastro.html">Cadastro</a>
+                    <a href="Lancamentos.html">Lançamentos</a>
                 </li>
                 <li>|</li>
                 <li>
-                    <a href="">Dashboard</a>
+                    <a href="login.html">Sair</a>
                 </li>
             </ul>
         </div>
+    </div>
+    </li>
+    </ul>
+    </div>
     </div>
 
 
@@ -57,16 +61,26 @@
         type: 'bar',
         data: {
             labels: [],
-            datasets: [{ 
+            datasets: [{
                 label: 'Quantidade De Favoritos',
                 data: [],
-                borderWidth: 1
+                borderWidth: 1,
+                backgroundColor: ['rgb(200,0,0)']
             }]
         },
         options: {
             scales: {
                 y: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    ticks: {
+                        color: 'black'
+                    }
+                },
+                x: {
+                    beginAtZero: true,
+                    ticks: {
+                        color: 'black'
+                    }
                 }
             }
         }

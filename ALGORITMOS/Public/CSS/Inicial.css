@@ -164,3 +164,12 @@
     height: 500px;
     border-radius: 20px;
   }
+
+  .header ul {
+    width: 700px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-size: medium;
+  }
